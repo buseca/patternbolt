@@ -8,6 +8,6 @@ The pattern selection still be under development and will be updated constantly.
 
 Contributions are welcome!
 
-demo page: http://www.ruggeromotta.com/patternbolt
+demo page: http://buseca.github.io/patternbolt/
 
 You can find me on twitter: @ruggeromotta
