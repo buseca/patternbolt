@@ -8,7 +8,7 @@ The pattern selection still be under development and will be updated constantly.
 
 
 
-**HOW TO USE IT**
+**HOW TO USE IT:**
 
 Patternbolt is a sort of library of inline SVG pattern, to use one of the pattern as background you have to include de CSS file in your webpage.<br>
 To do it just add this line in the `<head>` section:
