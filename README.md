@@ -11,3 +11,34 @@ Contributions are welcome!
 demo page: http://buseca.github.io/patternbolt/
 
 You can find me on twitter: @ruggeromotta
+
+
+
+HOW TO USE IT
+
+Patternbolt is a sort of library of inline SVG pattern, to use one of the pattern as background you have to include de CSS file in your webpage.<br>
+To do it just add this line in the `<head>` section:
+<br>
+```
+<link rel="stylesheet" href="css/patternbolt.css" />
+```
+
+after that you are able to insert pattern in your markup justin adding the right class to an element.
+Here come the list of CSS classes to use the pattern in the library:
+```
+.buseca-1
+.h-lines-bold
+.h-lines-medium
+.h-lines-light
+.o-lines-bold
+.o-lines-medium
+.o-lines-light
+.cross-bold
+.cross-medium
+.cross-light
+.cross-bold-thin
+.cross-medium-thin
+.cross-light-thin
+```
+
+other patterns and other classes will be added soon.
