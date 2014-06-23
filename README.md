@@ -37,11 +37,7 @@ Here come the list of CSS classes to use the pattern in the library:
 
 other patterns and other classes will be added soon.
 
-
-
+**demo page: http://buseca.github.io/patternbolt/**
 
 Contributions are welcome!
-
-demo page: http://buseca.github.io/patternbolt/
-
 You can find me on twitter: @ruggeromotta
