@@ -6,12 +6,6 @@ The pattern is added in a different level, so you can manipulate your DOM elemen
 As they are vectors they never pixelate, not even on retina screens ;) 
 The pattern selection still be under development and will be updated constantly. 
 
-Contributions are welcome!
-
-demo page: http://buseca.github.io/patternbolt/
-
-You can find me on twitter: @ruggeromotta
-
 
 
 HOW TO USE IT
@@ -42,3 +36,12 @@ Here come the list of CSS classes to use the pattern in the library:
 ```
 
 other patterns and other classes will be added soon.
+
+
+
+
+Contributions are welcome!
+
+demo page: http://buseca.github.io/patternbolt/
+
+You can find me on twitter: @ruggeromotta
