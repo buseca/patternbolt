@@ -121,13 +121,22 @@ $cross-light-thin: url("data:image/svg+xml;utf8,<svg version='1.1' id='Layer_1' 
     content:'';
 	}
 
+    &.with-gradient-and-picture {
+        &:before {
+            background-image: -o-radial-gradient(50% 112%, #00DCCF 52%, #035161 100%);
+            background-image: -moz-radial-gradient(50% 112%, #00DCCF 52%, #035161 100%);
+            background-image: -ms-radial-gradient(50% 112%, #00DCCF 52%, #035161 100%);
+            background-image: radial-gradient(50% 112%, #00DCCF 52%, #035161 100%);
+            opacity: 0.5;
+        }
+    }
     &.with-gradient {
         &:before {
             background-image: -o-radial-gradient(50% 112%, #00DCCF 52%, #035161 100%);
             background-image: -moz-radial-gradient(50% 112%, #00DCCF 52%, #035161 100%);
             background-image: -ms-radial-gradient(50% 112%, #00DCCF 52%, #035161 100%);
             background-image: radial-gradient(50% 112%, #00DCCF 52%, #035161 100%);
-            opacity: 0.6;
+            opacity: 0.8;
         }
     }
 
