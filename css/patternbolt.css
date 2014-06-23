@@ -1,8 +1,8 @@
 div {
-  height: 250px;
-  width: 500px;
+  height: 300px;
+  width: 48%;
   float: left;
-  margin: 5px; }
+  margin: 2px; }
 
 .pb-pattern {
   position: relative;
