@@ -2,18 +2,15 @@
 
 // colors
 
-$color-pattern: rgba(30,30,30,0.25);
-$color-back: rgba(255,255,255,1);
-// To active the negative color scheme comment the two line above and un-comment this 2 lines below:
-// $color-pattern: rgba(190,190,190,0.3);
-// $color-back: rgba(10,10,10,1);
+$color-pattern: rgba(255,255,255,1);
+$color-back: black;
 
 
 // picture example
-$picture: url('http://lorempixel.com/800/300/x?x=');
+$picture: url('http://lorempixel.com/1400/400/x?x=');
 
 // style to comment
-div {height: 300px; width: 48%; float: left; margin: 2px;}
+div {height: 400px; width: 100%; margin-bottom: 2px;}
 
 
 
@@ -123,20 +120,28 @@ $cross-light-thin: url("data:image/svg+xml;utf8,<svg version='1.1' id='Layer_1' 
 
     &.with-gradient-and-picture {
         &:before {
-            background-image: -o-radial-gradient(50% 112%, #00DCCF 52%, #035161 100%);
-            background-image: -moz-radial-gradient(50% 112%, #00DCCF 52%, #035161 100%);
-            background-image: -ms-radial-gradient(50% 112%, #00DCCF 52%, #035161 100%);
-            background-image: radial-gradient(50% 112%, #00DCCF 52%, #035161 100%);
-            opacity: 0.5;
+            // background-color: orange;
+            // background-position: center center;
+            // background-repeat: no-repeat;
+            // background: -webkit-gradient(radial, center center, 0, center center, 460, from(orange), to(#2F2727));
+            // background: -webkit-radial-gradient(circle, orange, #2F2727);
+            // background: -moz-radial-gradient(circle, orange, #2F2727);
+            // background: -ms-radial-gradient(circle, orange, #2F2727);
+            // opacity: 0.5;
+        }
+        &:after {
+            // opacity: 0.3
         }
     }
     &.with-gradient {
         &:before {
-            background-image: -o-radial-gradient(50% 112%, #00DCCF 52%, #035161 100%);
-            background-image: -moz-radial-gradient(50% 112%, #00DCCF 52%, #035161 100%);
-            background-image: -ms-radial-gradient(50% 112%, #00DCCF 52%, #035161 100%);
-            background-image: radial-gradient(50% 112%, #00DCCF 52%, #035161 100%);
-            opacity: 0.8;
+            // background-color: crismon;
+            // background-position: center center;
+            // background-repeat: no-repeat;
+            // background: -webkit-gradient(radial, center center, 0, center center, 460, from(crimson), to(#ededed));
+            // background: -webkit-radial-gradient(circle, crimson, #ededed);
+            // background: -moz-radial-gradient(circle, crimson, #ededed);
+            // background: -ms-radial-gradient(circle, crimson, #ededed);
         }
     }
 
