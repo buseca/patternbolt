@@ -1,15 +1,28 @@
 .pb-pattern {
-  height: 400px;
+  min-height: 36px;
   width: 100%;
   margin-bottom: 2px;
   background-color: black; }
+
+.showcase.over-picture .pb-pattern {
+  margin: 0 auto 2px auto;
+  width: 75%;
+  height: 360px;
+  margin-bottom: 25px; }
+
+.title {
+  height: auto;
+  padding: 25px;
+  background-color: magenta;
+  font-size: 50px;
+  text-align: center; }
+  .title:after {
+    background-size: 10px !important; }
 
 .intro {
   background-color: #fff000;
   padding: 25px;
   height: auto; }
-  .intro:hover:after {
-    background-color: #fff000; }
 
 .github {
   height: auto;
@@ -17,7 +30,6 @@
   background-color: lightgreen; }
 
 .github-go {
-  padding: 20px;
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -28,8 +40,14 @@
   font-size: 24px;
   font-weight: bold;
   box-shadow: 0 0 0px 5px rgba(0, 0, 0, 0.3); }
-  .github-go:hover:after {
-    background-color: #aaffff; }
+  .github-go a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: black; }
+
+h3 {
+  text-align: center; }
 
 .pb-pattern,
 .pb-pattern:after,
@@ -49,6 +67,8 @@
   overflow: hidden;
   content: '';
   z-index: -1; }
+.pb-pattern.soft:after {
+  opacity: 0.25; }
 .pb-pattern.buseca-1:after {
   background-image: url("data:image/svg+xml;utf8,<svg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='150px' height='150px' viewBox='0 0 150 150' enable-background='new 0 0 150 150' xml:space='preserve'> <path fill='white' d='M0,0h150v150H0V0z M150,119.953v-14.965l-7.488,7.488L150,119.953z M30,30L52.512,7.477L45.023,0H30.047 l7.465,7.477L30,15L15,0H0.012L30,30z M120.047,0L150,29.953V15L135,0H120.047z M75,0L0,75v14.988L89.988,0H75z M7.512,37.477 L0,44.988V60l22.512-22.523L0,14.988v14.988L7.512,37.477z M89.988,150l7.523-7.523L75,120l-15,15l-7.5-7.512l0.012-0.012l15-15 l-15-14.977L60,90l60.023,60H135L60,75L37.512,97.5l15,14.977l-7.5,7.5l-7.512-7.488l0.012-0.012L30,105l-7.5,7.453l0.012,0.023 l-7.5,7.512l-7.5-7.488l-6.574,6.562L105.012,15l7.5,7.512l-15,14.988l14.965,15.012L105,60L90,45l-7.488,7.477l-15,15L150,149.953 v-14.965L82.512,67.477l7.5-7.488L105,75l14.977-14.977L120,60.059l0.047-0.035l7.465,7.453L119.988,75l-7.477,7.477L120,90 l0.012-0.012L135,105l15-15V75l-15,15l-7.512-7.5l15.023-15.023l-14.965-14.953L135,45.117l15,15.117V45.023l-15-14.906L120,45 l-7.488-7.523l15-15L105,0L0,104.988V120l7.488,7.5L15,135l15.012-15.012l7.488,7.5l-14.988,14.988L30,150l0.012-0.012L30.023,150 H45l-7.512-7.488l7.5-7.512L60,150l15-15l7.512,7.477L75,150H89.988z M0,135v15h15.023L0,135z'/> </svg>");
   background-size: 30px; }
@@ -61,7 +81,7 @@
 .pb-pattern.h-lines-light:after {
   background-image: url("data:image/svg+xml;utf8,<svg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10px' height='10px' viewBox='0 0 10 10' enable-background='new 0 0 10 10' xml:space='preserve'> <rect fill='white' width='10' height='1'/> </svg>");
   background-size: 10px; }
-.pb-pattern.o-lines-bold:before {
+.pb-pattern.o-lines-bold:after {
   background-image: url("data:image/svg+xml;utf8,<svg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' fill='white' width='12px' height='12px' viewBox='0 0 12 12' enable-background='new 0 0 12 12' xml:space='preserve'> <path d='M12,3.535V0H8.465L0,8.465V12h3.535L12,3.535z M0,0h3.535L0,3.535V0z M8.465,12L12,8.465V12H8.465z'/> </svg>");
   background-size: 12px; }
 .pb-pattern.o-lines-medium:after, .pb-pattern.intro:hover:after {
