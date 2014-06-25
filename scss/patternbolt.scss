@@ -7,22 +7,47 @@ $color-back: black;
 
 
 // picture example
-$picture: url('http://lorempixel.com/1400/400/x?x=');
+$picture: url('http://lorempixel.com/1200/400/x?x=');
 
 // demo page style
-.pb-pattern {height: 400px; width: 100%; margin-bottom: 2px; background-color: $color-back;}
+.pb-pattern {
+    min-height: 36px;
+    width: 100%;
+    margin-bottom: 2px;
+    background-color: $color-back;
+}
+.showcase .pb-pattern {
+}
+.showcase.over-picture .pb-pattern {
+    margin: 0 auto 2px auto;
+    width: 75%;
+    height: 360px;
+    margin-bottom: 25px;
+}
+.title {
+    height: auto;
+    padding: 25px;
+    background-color: magenta;
+    font-size: 50px;
+    text-align: center;
+    &:after {
+        background-size: 10px !important;
+    }
+}
 .intro {
     background-color: #fff000;
     padding: 25px;
     height: auto;
     &:hover:after {
         @extend .o-lines-medium;
-        background-color: #fff000;
     }
 }
-.github {height: auto; padding: 50px; background-color: lightgreen;}
+.github {
+    height: auto;
+    padding: 50px;
+    background-color: lightgreen;
+}
 .github-go {
-    padding: 20px;
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -35,8 +60,18 @@ $picture: url('http://lorempixel.com/1400/400/x?x=');
     box-shadow: 0 0 0px 5px rgba(0,0,0,0.3);
     &:hover:after {
         @extend .o-lines-light;
-        background-color: #aaffff;
     }
+    a {
+        display: block;
+        padding: 20px;
+        text-decoration: none;
+        color: black;
+        &:hover {
+        }
+    }
+}
+h3 {
+    text-align: center;
 }
 
 
@@ -163,32 +198,12 @@ $cross-light-thin: url("data:image/svg+xml;utf8,<svg version='1.1' id='Layer_1' 
     z-index: -1;
 	}
 
-    &.with-gradient-and-picture {
-        &:before {
-            // background-color: orange;
-            // background-position: center center;
-            // background-repeat: no-repeat;
-            // background: -webkit-gradient(radial, center center, 0, center center, 460, from(orange), to(#2F2727));
-            // background: -webkit-radial-gradient(circle, orange, #2F2727);
-            // background: -moz-radial-gradient(circle, orange, #2F2727);
-            // background: -ms-radial-gradient(circle, orange, #2F2727);
-            // opacity: 0.5;
-        }
+    &.soft {
         &:after {
-            // opacity: 0.3
+            opacity: 0.25;
         }
     }
-    &.with-gradient {
-        &:before {
-            // background-color: crismon;
-            // background-position: center center;
-            // background-repeat: no-repeat;
-            // background: -webkit-gradient(radial, center center, 0, center center, 460, from(crimson), to(#ededed));
-            // background: -webkit-radial-gradient(circle, crimson, #ededed);
-            // background: -moz-radial-gradient(circle, crimson, #ededed);
-            // background: -ms-radial-gradient(circle, crimson, #ededed);
-        }
-    }
+
 
     &.buseca-1 {
         &:after {
@@ -215,7 +230,7 @@ $cross-light-thin: url("data:image/svg+xml;utf8,<svg version='1.1' id='Layer_1' 
         }
     }
     &.o-lines-bold {
-        &:before{
+        &:after{
             background-image: $o-lines-bold;
             background-size: 12px;
         }
