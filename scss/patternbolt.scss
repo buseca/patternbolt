@@ -9,8 +9,12 @@ $color-back: black;
 // picture example
 $picture: url('http://lorempixel.com/1400/400/x?x=');
 
-// style to comment
-div {height: 400px; width: 100%; margin-bottom: 2px;}
+// demo page style
+.pb-pattern {height: 400px; width: 100%; margin-bottom: 2px; background-color: $color-back}
+.wrapper {background-color: #dddddd; height: 200px;}
+.inner-wrapper {padding: 25px; height: 100%;}
+
+
 
 
 
@@ -103,7 +107,14 @@ $cross-light-thin: url("data:image/svg+xml;utf8,<svg version='1.1' id='Layer_1' 
 
 .pb-pattern {
     position: relative;
-    background-color: $color-back;
+}
+
+.pb-inner-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 .pb-pattern {
@@ -170,7 +181,7 @@ $cross-light-thin: url("data:image/svg+xml;utf8,<svg version='1.1' id='Layer_1' 
         }
     }
     &.o-lines-bold {
-        &:after {
+        &:before{
             background-image: $o-lines-bold;
             background-size: 12px;
         }
