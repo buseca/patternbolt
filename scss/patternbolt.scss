@@ -10,13 +10,34 @@ $color-back: black;
 $picture: url('http://lorempixel.com/1400/400/x?x=');
 
 // demo page style
-.pb-pattern {height: 400px; width: 100%; margin-bottom: 2px; background-color: $color-back}
-.wrapper {background-color: #dddddd; height: 200px;}
-.inner-wrapper {padding: 25px; height: 100%;}
-
-
-
-
+.pb-pattern {height: 400px; width: 100%; margin-bottom: 2px; background-color: $color-back;}
+.intro {
+    background-color: #fff000;
+    padding: 25px;
+    height: auto;
+    &:hover:after {
+        @extend .o-lines-medium;
+        background-color: #fff000;
+    }
+}
+.github {height: auto; padding: 50px; background-color: lightgreen;}
+.github-go {
+    padding: 20px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #aaffff;
+    border: none;
+    height: auto;
+    width: auto;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 0 0px 5px rgba(0,0,0,0.3);
+    &:hover:after {
+        @extend .o-lines-light;
+        background-color: #aaffff;
+    }
+}
 
 
 
@@ -103,19 +124,31 @@ $cross-light-thin: url("data:image/svg+xml;utf8,<svg version='1.1' id='Layer_1' 
 <path fill='"+ $color-pattern +"' d='M5,0H0v5h-2V0h-5v-2h5v-5h2v5h5V0z M23,18h-5v5h-2v-5h-5v-2h5v-5h2v5h5V18z'/>
 </svg>");
 
+
+
+
+
+
+
 // basic style
+.pb-pattern,
+.pb-pattern:after,
+.pb-pattern:before {
+    box-sizing: border-box;
+}
 
 .pb-pattern {
     position: relative;
+    z-index: 1;
 }
 
-.pb-inner-pattern {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-}
+// .pb-inner-pattern {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     bottom: 0;
+//     right: 0;
+// }
 
 .pb-pattern {
 	&:after,
@@ -127,6 +160,7 @@ $cross-light-thin: url("data:image/svg+xml;utf8,<svg version='1.1' id='Layer_1' 
     right: 0;
     overflow: hidden;
     content:'';
+    z-index: -1;
 	}
 
     &.with-gradient-and-picture {
