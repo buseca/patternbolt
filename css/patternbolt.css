@@ -1,7 +1,7 @@
 .pb-pattern {
   min-height: 36px;
   width: 100%;
-  margin-bottom: 2px;
+  margin-bottom: 5px;
   background-color: black; }
 
 .showcase.over-picture .pb-pattern {
@@ -13,7 +13,7 @@
 .title {
   height: auto;
   padding: 25px;
-  background-color: magenta;
+  background-color: lightgreen;
   font-size: 50px;
   text-align: center; }
   .title:after {
@@ -27,7 +27,7 @@
 .github {
   height: auto;
   padding: 50px;
-  background-color: lightgreen; }
+  background-color: magenta; }
 
 .github-go {
   display: block;
@@ -39,7 +39,7 @@
   width: auto;
   font-size: 24px;
   font-weight: bold;
-  box-shadow: 0 0 0px 5px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 0 0px 10px rgba(0, 0, 0, 0.3); }
   .github-go a {
     display: block;
     padding: 20px;
