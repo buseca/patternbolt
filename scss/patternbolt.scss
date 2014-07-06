@@ -20,8 +20,9 @@ body {
     font-family: 'Volkhov', arial;
     .demo.pb-pattern {
         background-color: #ccc;
-        padding: 40px 0; 
+        padding: 40px 0;
         &:after {
+            opacity: 0.75;
             background-size: 20px;
             -webkit-transition: background-image 0.2s ease-in-out;
             -moz-transition: background-image 0.2s ease-in-out;
@@ -29,18 +30,23 @@ body {
             -o-transition: background-image 0.2s ease-in-out;
             transition: background-image 0.2s ease-in-out;
         }
-        &.iniziale:hover {
+        &.iniziale {
             &:after {
-            @extend .cross-light;
-            background-size: 20px!important;
-            opacity: 0.6;
+                opacity: 1;
+            }
+            &.over {
+                &:after {
+                @extend .cross-light;
+                background-size: 20px!important;
+                opacity: 0.6;
+                }
             }
         }
         &.buseca-1:after { background-size: 30px; }
         &.h-lines-bold:after { background-size: 6px; }
         &.o-lines-bold:after { background-size: 40px; }
         &.cross-medium-thin:after { background-size: 15px; }
-        &.cross-light:after { background-size: 10px; }
+        &.cross-medium:after { background-size: 10px; }
 
         &.pb-size-5:after {background-size: 5px;}
         &.pb-size-10:after {background-size: 10px;}
@@ -118,6 +124,7 @@ body {
             box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset;
             background: #202020;
             background-color: rgba(0, 0, 0, 0.3);
+            margin-top: 15px;
         }
     }
     .tasto {
@@ -154,8 +161,13 @@ body {
     }
     #size-pattern {
         width: 100%;
+        height: 80px;
     }
-
+    #color-pattern {
+        width: 100%;
+        height: 63px;
+        margin: 10px 0;
+    }    
 }
 
 

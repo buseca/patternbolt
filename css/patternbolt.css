@@ -10,13 +10,16 @@ body {
     background-color: #ccc;
     padding: 40px 0; }
     body .demo.pb-pattern:after {
+      opacity: 0.75;
       background-size: 20px;
       -webkit-transition: background-image 0.2s ease-in-out;
       -moz-transition: background-image 0.2s ease-in-out;
       -ms-transition: background-image 0.2s ease-in-out;
       -o-transition: background-image 0.2s ease-in-out;
       transition: background-image 0.2s ease-in-out; }
-    body .demo.pb-pattern.iniziale:hover:after {
+    body .demo.pb-pattern.iniziale:after {
+      opacity: 1; }
+    body .demo.pb-pattern.iniziale.over:after {
       background-size: 20px !important;
       opacity: 0.6; }
     body .demo.pb-pattern.buseca-1:after {
@@ -27,7 +30,7 @@ body {
       background-size: 40px; }
     body .demo.pb-pattern.cross-medium-thin:after {
       background-size: 15px; }
-    body .demo.pb-pattern.cross-light:after, body .demo.pb-pattern.iniziale:hover:after {
+    body .demo.pb-pattern.cross-medium:after {
       background-size: 10px; }
     body .demo.pb-pattern.pb-size-5:after {
       background-size: 5px; }
@@ -101,7 +104,8 @@ body {
       -moz-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset;
       box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset;
       background: #202020;
-      background-color: rgba(0, 0, 0, 0.3); }
+      background-color: rgba(0, 0, 0, 0.3);
+      margin-top: 15px; }
   body .tasto {
     width: 17%;
     height: 80px;
@@ -135,7 +139,12 @@ body {
     body .tasto.tasto-5:after {
       background-size: 20px; }
   body #size-pattern {
-    width: 100%; }
+    width: 100%;
+    height: 80px; }
+  body #color-pattern {
+    width: 100%;
+    height: 63px;
+    margin: 10px 0; }
 
 .pb-pattern {
   min-height: 36px;
@@ -235,7 +244,7 @@ h3 {
 .cross-medium:after {
   background-image: url("data:image/svg+xml;utf8,<svg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='22px' height='22px' viewBox='0 0 22 22' enable-background='new 0 0 22 22' xml:space='preserve'> <path fill='white' d='M12,8H8v4H4V8H0V4h4V0h4v4h4V8z M22,15h-3v-4h-4v4h-4v4h4v3h4v-3h3V15z M15,1h4V0h-4V1z M0,19h1v-4H0V19z'/> </svg>"); }
 
-.cross-light:after, body .demo.pb-pattern.iniziale:hover:after {
+.cross-light:after, body .demo.pb-pattern.iniziale.over:after {
   background-image: url("data:image/svg+xml;utf8,<svg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='22px' height='22px' viewBox='0 0 22 22' enable-background='new 0 0 22 22' xml:space='preserve'> <path fill='white' d='M12,7H7v5H5V7H0V5h5V0h2v5h5V7z M22,16h-4v-5h-2v5h-5v2h5v4h2v-4h4V16z M16,1h2V0h-2V1z M0,18h1v-2H0V18z'/> </svg>"); }
 
 .cross-bold-thin:after {
