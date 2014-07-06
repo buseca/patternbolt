@@ -104,9 +104,16 @@ body {
             &:focus, &:active {
                 outline-color: 0px solid transparent !important;
             }
+            a{
+                text-decoration: none;
+                color: inherit;
+            }
         }
         a{
-            
+            color: #d3123b;
+            &:hover {
+                text-decoration: none;
+            }
         }
     }
     .controls {
@@ -168,6 +175,15 @@ body {
         height: 63px;
         margin: 10px 0;
     }    
+}
+
+.intro {
+    .inner-intro {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 960px;
+        line-height: 24px;
+    }
 }
 
 

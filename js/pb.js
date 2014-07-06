@@ -27,14 +27,14 @@ $(document).ready(function(){
 		var pbSize = $(this).val();
 		$('.demo').removeClass( function (index, css) { return (css.match(/\bpb-size-\S+/g) || []).join(' '); });
 		$('.demo').addClass('pb-size-' + pbSize);
-		$('#bg-size-pb').html('background-size: ' + pbSize + 'px ;')
+		$('#bg-size-pb').html('.ted:after { background-size: ' + pbSize + 'px ;}')
 	});
 
 	// controller del colore
 	$("#color-pattern").change(function () {
 		var pbColor = $(this).val();
 		$('.demo').css('background-color',pbColor)
-		$('#bg-color-pb').html('background-color: ' + pbColor + ' ;')
+		$('#bg-color-pb').html('.ted { background-color: ' + pbColor + ' ;}')
 	});
 
 });
