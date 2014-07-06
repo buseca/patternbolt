@@ -4,15 +4,57 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PatternBolt</title>
+    <link href='http://fonts.googleapis.com/css?family=Volkhov:400,700|Rye' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/f-css-grid.css" />
     <link rel="stylesheet" href="css/patternbolt.css" />
-<!-- 
-    <script src="js/modernizr.js"></script>
- -->  
+    <script src="js/jquery.js"></script>
+    <script src="js/pb.js"></script>
   </head>
+
   <body>
+
+    <div class="demo pb-pattern cross-light-thin iniziale">
+        <h1>PatternBolt</h1>
+        <h2> Patternbolt is a fine selection of SVG pattern background,<br>packed in a single CSS or SCSS file.</h2>
+        <nav>
+            <button class="pb-pattern o-lines-bold dwnld">Download</button>
+            <button class="pb-pattern o-lines-bold git">GitHub repo</button>
+            <a href="http://www.twitter.com" class="twitter">@ruggeromotta</a>
+        </nav>  
+    </div>
+
+    <div class="controls">
+        <div class="row">
+            <div class="columns large-4 medium-12">
+                <h3>select a pattern</h3>
+                <div id="buseca-1" class="pb-pattern buseca-1 tasto tasto-1"></div>
+                <div id="h-lines-bold" class="pb-pattern h-lines-bold tasto tasto-2"></div>
+                <div id="o-lines-bold" class="pb-pattern o-lines-bold tasto tasto-3"></div>
+                <div id="cross-medium-thin" class="pb-pattern cross-medium-thin tasto tasto-4"></div>
+                <div id="cross-light" class="pb-pattern cross-light tasto tasto-5"></div>
+                <code id="classe-pb">class="pb-pattern <span>o-lines-bold</span>"</code>
+            </div>
+            <div class="columns large-4 medium-6">
+                <h3>select a size</h3>
+                <input type="range" id="size-pattern" max="50" min="5" step="5" value="20">
+                <code id="bg-size-pb">background-size: 20px ;</code>
+            </div>
+            <div class="columns large-4 medium-6">
+                <h3>select a color</h3>
+                <input type="color">
+                <code id="bg-color-pb">background-color: #ff44e4 ;</code>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+ 
     <div class="title pb-pattern cross-light-thin">
-        <h1>*** PatternBolt ***</h1> 
+        <h1>PatternBolt ^_^</h1> 
     </div>
     <div class="intro pb-pattern o-lines-bold">
         <h2>Background patterns just adding a class!</h2>
