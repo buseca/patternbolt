@@ -10,12 +10,188 @@ $color-back: black;
 $picture: url('http://lorempixel.com/1200/400/x?x=');
 
 // demo page style
-body {
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }
+body {
+    font-family: 'Volkhov', arial;
+    .demo.pb-pattern {
+        background-color: #ccc;
+        padding: 40px 0;
+        &:after {
+            opacity: 0.75;
+            background-size: 20px;
+            -webkit-transition: background-image 0.2s ease-in-out;
+            -moz-transition: background-image 0.2s ease-in-out;
+            -ms-transition: background-image 0.2s ease-in-out;
+            -o-transition: background-image 0.2s ease-in-out;
+            transition: background-image 0.2s ease-in-out;
+        }
+        &.iniziale {
+            &:after {
+                opacity: 1;
+            }
+            &.over {
+                &:after {
+                @extend .cross-light;
+                background-size: 20px!important;
+                opacity: 0.6;
+                }
+            }
+        }
+        &.buseca-1:after { background-size: 30px; }
+        &.h-lines-bold:after { background-size: 6px; }
+        &.o-lines-bold:after { background-size: 40px; }
+        &.cross-medium-thin:after { background-size: 15px; }
+        &.cross-medium:after { background-size: 10px; }
+
+        &.pb-size-5:after {background-size: 5px;}
+        &.pb-size-10:after {background-size: 10px;}
+        &.pb-size-15:after {background-size: 15px;}
+        &.pb-size-20:after {background-size: 20px;}
+        &.pb-size-25:after {background-size: 25px;}
+        &.pb-size-30:after {background-size: 30px;}
+        &.pb-size-35:after {background-size: 35px;}
+        &.pb-size-40:after {background-size: 40px;}
+        &.pb-size-45:after {background-size: 45px;}
+        &.pb-size-50:after {background-size: 50px;}
+    }
+    h1 {
+        font-family: 'Rye', arial;
+        font-weight: normal;
+        font-size: 100px;
+        text-align: center;
+        margin-top: 0;
+    }
+    h2 {
+        font-size: 28px;
+        text-align: center;
+        line-height: 42px;
+    }
+
+    nav {
+        margin-top: 100px;
+        margin-bottom: 20px;
+        text-align: center;
+        button.pb-pattern {
+            display: inline-block;
+            padding: 12px 25px;
+            font-size: 21px;
+            width: auto;
+            margin-right: 30px;
+            border: none;
+            box-shadow: 0 0 0px 8px rgba(0,0,0,0.2);
+            background-color: #DDD;
+            outline-color: 0px solid transparent !important;
+            &:after {
+                background-size: 6px;
+            }
+            &:hover {
+                outline-color: 0px solid transparent !important;
+                &:after {
+                    -webkit-transition: background-image 0.1s ease-in-out;
+                    -moz-transition: background-image 0.1s ease-in-out;
+                    -ms-transition: background-image 0.1s ease-in-out;
+                    -o-transition: background-image 0.1s ease-in-out;
+                    transition: background-image 0.1s ease-in-out;
+                    background-size: 12px;
+                    box-shadow: 0 0 0px 8px rgba(0,0,0,0.25);
+                }
+            }
+            &:focus, &:active {
+                outline-color: 0px solid transparent !important;
+            }
+            a{
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+        a{
+            color: #d3123b;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    .controls {
+        padding: 20px 0;
+        background-color: #343434;
+        color: #eeeeee;
+        code {
+            font-size: 14px;
+            display: block;
+            padding:7px;
+            color: #bbbbbb;
+            margin: 8px 0;
+            -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset;
+            -moz-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset;
+            box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset;
+            background: #202020;
+            background-color: rgba(0, 0, 0, 0.3);
+            margin-top: 15px;
+        }
+    }
+    .tasto {
+        width: 17%;
+        height: 80px;
+        margin: 0 1%;
+        display: inline-block;
+        background-color: #555555;
+        border: 3px solid #fff;
+        box-shadow: 0 0 4px 2px rgba(0,0,0,0.3);
+        border-radius: 8px;
+        -moz-border-radius: 8px;
+        cursor: pointer;
+        &:after {
+            background-size: 20px;
+            border-radius: 8px;
+            -moz-border-radius: 8px;
+            box-shadow: inset 0 0 8px 3px rgba(0,0,0,0.5);
+        }
+        &:hover {
+            background-color: #888;
+        }
+        &.active {
+            background-color: lightgrey;
+            &:hover {
+                background-color: lightgrey;
+            }
+        }
+        &.tasto-1:after { background-size: 40px;}
+        &.tasto-2:after { background-size: 10px; }
+        &.tasto-3:after { background-size: 10px; }
+        &.tasto-4:after { background-size: 20px; }
+        &.tasto-5:after { background-size: 20px; }
+    }
+    #size-pattern {
+        width: 100%;
+        height: 80px;
+    }
+    #color-pattern {
+        width: 100%;
+        height: 63px;
+        margin: 10px 0;
+    }    
+}
+
+.intro {
+    .inner-intro {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 960px;
+        line-height: 24px;
+    }
+}
+
+
+
+// old page css
 .pb-pattern {
     min-height: 36px;
-    width: 100%;
-    margin-bottom: 5px;
+    min-width: 20px;
     background-color: $color-back;
 }
 .showcase .pb-pattern {
@@ -205,89 +381,90 @@ $cross-light-thin: url("data:image/svg+xml;utf8,<svg version='1.1' id='Layer_1' 
             opacity: 0.25;
         }
     }
-
-
-    &.buseca-1 {
-        &:after {
-            background-image: $buseca-1;
-            background-size: 30px;
-        }
-    }
-    &.h-lines-bold {
-        &:after {
-            background-image: $h-lines-bold;
-            background-size: 10px;
-        }
-    }
-    &.h-lines-medium {
-        &:after {
-            background-image: $h-lines-medium;
-            background-size: 10px;
-        }
-    }
-    &.h-lines-light {
-        &:after {
-            background-image: $h-lines-light;
-            background-size: 10px;
-        }
-    }
-    &.o-lines-bold {
-        &:after{
-            background-image: $o-lines-bold;
-            background-size: 12px;
-        }
-    }
-    &.o-lines-medium {
-        &:after {
-            background-image: $o-lines-medium;
-            background-size: 12px;
-        }
-    }
-    &.o-lines-light {
-        &:after {
-            background-image: $o-lines-light;
-            background-size: 12px;
-        }
-    }
-
-    &.cross-bold {
-        &:after {
-            background-image: $cross-bold;
-            background-size: 11px;
-        }
-    }
-    &.cross-medium {
-        &:after {
-            background-image: $cross-medium;
-            background-size: 11px;
-        }
-    }
-    &.cross-light {
-        &:after {
-            background-image: $cross-light;
-            background-size: 11px;
-        }
-    }
-    &.cross-bold-thin {
-        &:after {
-            background-image: $cross-bold-thin;
-            background-size: 18px;
-        }
-    }
-    &.cross-medium-thin {
-        &:after {
-            background-image: $cross-medium-thin;
-            background-size: 18px;
-        }
-    }
-    &.cross-light-thin {
-        &:after {
-            background-image: $cross-light-thin;
-            background-size: 18px;
-        }
-    }
-
 }
+
+
+.buseca-1 {
+    &:after {
+        background-image: $buseca-1;
+        // background-size: 30px;
+    }
+}
+.h-lines-bold {
+    &:after {
+        background-image: $h-lines-bold;
+        // background-size: 10px;
+    }
+}
+.h-lines-medium {
+    &:after {
+        background-image: $h-lines-medium;
+        // background-size: 10px;
+    }
+}
+.h-lines-light {
+    &:after {
+        background-image: $h-lines-light;
+        // background-size: 10px;
+    }
+}
+.o-lines-bold {
+    &:after{
+        background-image: $o-lines-bold;
+        // background-size: 12px;
+    }
+}
+.o-lines-medium {
+    &:after {
+        background-image: $o-lines-medium;
+        // background-size: 12px;
+    }
+}
+.o-lines-light {
+    &:after {
+        background-image: $o-lines-light;
+        // background-size: 12px;
+    }
+}
+
+.cross-bold {
+    &:after {
+        background-image: $cross-bold;
+        // background-size: 11px;
+    }
+}
+.cross-medium {
+    &:after {
+        background-image: $cross-medium;
+        // background-size: 11px;
+    }
+}
+.cross-light {
+    &:after {
+        background-image: $cross-light;
+        // background-size: 11px;
+    }
+}
+.cross-bold-thin {
+    &:after {
+        background-image: $cross-bold-thin;
+        // background-size: 18px;
+    }
+}
+.cross-medium-thin {
+    &:after {
+        background-image: $cross-medium-thin;
+        // background-size: 18px;
+    }
+}
+.cross-light-thin {
+    &:after {
+        background-image: $cross-light-thin;
+        // background-size: 18px;
+    }
+}
+
+
 
 
 

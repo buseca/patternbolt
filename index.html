@@ -4,62 +4,97 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PatternBolt</title>
+    <link href='http://fonts.googleapis.com/css?family=Volkhov:400,700|Rye' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/f-css-grid.css" />
     <link rel="stylesheet" href="css/patternbolt.css" />
-<!-- 
-    <script src="js/modernizr.js"></script>
- -->  
+    <script src="js/jquery.js"></script>
+    <script src="js/pb.js"></script>
   </head>
+
   <body>
-    <div class="title pb-pattern cross-light-thin">
-        <h1>*** PatternBolt ***</h1> 
+
+    <div class="demo pb-pattern cross-light-thin iniziale">
+        <h1>PatternBolt</h1>
+        <h2> Patternbolt is a fine selection of SVG pattern background,<br>packed in a single CSS or SCSS file.</h2>
+        <nav>
+            <button class="pb-pattern o-lines-bold dwnld"><a href="https://github.com/buseca/patternbolt/archive/gh-pages.zip">Dwnld demo</a></button>
+            <button class="pb-pattern o-lines-bold git"><a href="https://github.com/buseca/patternbolt">Github repo</a></button>
+            <a href="http://www.twitter.com" class="twitter">@ruggeromotta</a>
+        </nav>  
     </div>
+
+    <div class="controls">
+        <div class="row">
+            <div class="columns large-4 medium-12">
+                <h3>select a pattern</h3>
+                <div id="buseca-1" class="pb-pattern buseca-1 tasto tasto-1"></div>
+                <div id="h-lines-bold" class="pb-pattern h-lines-bold tasto tasto-2"></div>
+                <div id="o-lines-bold" class="pb-pattern o-lines-bold tasto tasto-3"></div>
+                <div id="cross-medium-thin" class="pb-pattern cross-medium-thin tasto tasto-4"></div>
+                <div id="cross-medium" class="pb-pattern cross-medium tasto tasto-5"></div>
+                <code id="classe-pb">class="ted pb-pattern <span>o-lines-bold</span>"</code>
+            </div>
+            <div class="columns large-4 medium-6">
+                <h3>change the size</h3>
+                <input type="range" id="size-pattern" max="50" min="5" step="5" value="20">
+                <code id="bg-size-pb">.ted:after { background-size: 20px ;}</code>
+            </div>
+            <div class="columns large-4 medium-6">
+                <h3>select a color</h3>
+                <input id="color-pattern" type="color" value="#ffffff">
+                <code id="bg-color-pb">.ted { background-color: #ffffff ;}</code>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+ 
     <div class="intro pb-pattern o-lines-bold">
-        <h2>Background patterns just adding a class!</h2>
-        <p>Patternbolt is a fine selection of SVG pattern background, packed in a single CSS or SCSS file. Just put it in your project and add the right class to your elements. You can change pattern color changing the color variables and the pattern size changing the background-size.
-        <br>
-        The pattern is added in a different level, so you can manipulate your DOM element as you want, adding a background picture, a gradient, or both, like in the example below. 
-        <br>
-        As they are vectors they never pixelate, not even on retina screens ;)
-        <br>
-        The pattern selection still be under development and will be updated constantly.
-        <br><br>
-        Contributions are welcome!
-        </p>
+        <div class="inner-intro">
+            <h2>Background patterns just adding a class!</h2>
+            <p>Patternbolt is a fine selection of SVG pattern background, packed in a single CSS or SCSS file, just include the css file in your project and add a class to your element to insert a pattern.
+            <br>
+            You can change color palette changing the background-color of your element and the pattern size changing the background-size of the ':after' element.
+            <br>
+            The pattern is added in a added ':after' level, so you can manipulate your DOM element as you want, adding a bg-color, a bg-picture, a gradient, or both. 
+            <br>
+            As they are vectors they never pixelate, not even on retina screens ;)
+            <br>
+            The pattern selection still be under development and will be updated constantly.
+            </p>
+        </div>
     </div>
-    <div class="github pb-pattern buseca-1">
-        <button class="github-go pb-pattern o-lines-bold">
-            <a href="https://github.com/buseca/patternbolt">
-                Go to the Github repository
-            </a>
-        </button>
-    </div>
-<br>
-<h3>SVG patterns over flat color</h3>
-<div class="showcase">
-    <div class="pb-pattern h-lines-bold"></div>
-    <div class="pb-pattern cross-medium"></div>
-    <div class="pb-pattern buseca-1"></div>
-    <div class="pb-pattern h-lines-medium"></div>
-    <div class="pb-pattern h-lines-light"></div>
-    <div class="pb-pattern cross-bold"></div>
-    <div class="pb-pattern cross-light"></div>
-    <div class="pb-pattern cross-medium-thin"></div>
-    <div class="pb-pattern cross-bold-thin"></div>
-    <div class="pb-pattern cross-light-thin"></div>
-    <div class="pb-pattern o-lines-medium"></div>
-    <div class="pb-pattern o-lines-bold"></div>
-    <div class="pb-pattern o-lines-light"></div>
-</div>
-<br>
-<h3>SVG patterns over random picture</h3>
+
+    <br>
+    <!-- 
+    <h3>SVG patterns over flat color</h3>
+    <div class="showcase">
+        <div class="pb-pattern h-lines-bold"></div>
+        <div class="pb-pattern cross-medium"></div>
+        <div class="pb-pattern buseca-1"></div>
+        <div class="pb-pattern h-lines-medium"></div>
+        <div class="pb-pattern h-lines-light"></div>
+        <div class="pb-pattern cross-bold"></div>
+        <div class="pb-pattern cross-light"></div>
+        <div class="pb-pattern cross-medium-thin"></div>
+        <div class="pb-pattern cross-bold-thin"></div>
+        <div class="pb-pattern cross-light-thin"></div>
+        <div class="pb-pattern o-lines-medium"></div>
+        <div class="pb-pattern o-lines-bold"></div>
+        <div class="pb-pattern o-lines-light"></div>
+    </div> -->
+    
+    <br>
+
+    <h3>SVG patterns over random picture</h3>
     <div class="showcase over-picture">
-        <div class="pb-pattern h-lines-light soft" style="background-image: url('http://lorempixel.com/800/300/?q=y'); background-size: cover;"></div>
         <div class="pb-pattern o-lines-light soft" style="background-image: url('http://lorempixel.com/800/300/?q=z'); background-size: cover;"></div>
         <div class="pb-pattern cross-light-thin soft" style="background-image: url('http://lorempixel.com/800/300/?q=j'); background-size: cover;"></div>
-        <div class="pb-pattern cross-light soft" style="background-image: url('http://lorempixel.com/800/300/?q=t'); background-size: cover;"></div>
         <div class="pb-pattern cross-medium-thin soft" style="background-image: url('http://lorempixel.com/800/300/?q=w'); background-size: cover;"></div>
-        <div class="pb-pattern buseca-1 soft" style="background-image: url('http://lorempixel.com/800/300/?q=S'); background-size: cover;"></div>
     </div>
 
   </body>
