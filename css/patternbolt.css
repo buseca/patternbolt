@@ -5,8 +5,7 @@ button:focus {
   outline: none; }
 
 body {
-  font-family: 'Volkhov', arial;
-  background: red !important; }
+  font-family: 'Volkhov', arial; }
   body .demo.pb-pattern {
     background-color: #ccc;
     padding: 40px 0; }
