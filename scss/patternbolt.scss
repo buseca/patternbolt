@@ -8,7 +8,7 @@ $color-back: black;
 // picture example
 $picture: url('http://lorempixel.com/1200/400/x?x=');
 
-// demo page style
+// demo page style.
 input:focus,
 select:focus,
 textarea:focus,
@@ -332,8 +332,7 @@ $cross-medium-thin: url("data:image/svg+xml;utf8,<svg version='1.1' id='Layer_1'
 <path fill='"+ $color-pattern +"' d='M5,1H1v4h-4V1h-4v-4h4v-4h4v4h4V1z M23,19h-4v4h-4v-4h-4v-4h4v-4h4v4h4V19z'/>
 </svg>");
 
-$cross-light-thin: url("data%3Aimage%2Fsvg%2Bxml%3Butf8%2C%3Csvg+version%3D%271.1%27+id%3D%27Layer_1%27+xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27+xmlns%3Axlink%3D%27http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%27+x%3D%270px%27+y%3D%270px%27%0A+++++width%3D%2736px%27+height%3D%2736px%27+viewBox%3D%27-7+-7+36+36%27+enable-background%3D%27new+-7+-7+36+36%27+xml%3Aspace%3D%27preserve%27%3E%0A%3Cpath+fill%3D%27%22%2B+%24color-pattern+%2B%22%27+d%3D%27M5%2C0H0v5h-2V0h-5v-2h5v-5h2v5h5V0z+M23%2C18h-5v5h-2v-5h-5v-2h5v-5h2v5h5V18z%27%2F%3E%0A%3C%2Fsvg%3E");
-
+$cross-light-thin: url("data:image/svg+xml,%3Csvg+version%3D%271.1%27+id%3D%27Layer_1%27+xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27+xmlns%3Axlink%3D%27http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%27+x%3D%270px%27+y%3D%270px%27%0A+++++width%3D%2736px%27+height%3D%2736px%27+viewBox%3D%27-7+-7+36+36%27+enable-background%3D%27new+-7+-7+36+36%27+xml%3Aspace%3D%27preserve%27%3E%0A%3Cpath+fill%3D%27%22%2B+%24color-pattern+%2B%22%27+d%3D%27M5%2C0H0v5h-2V0h-5v-2h5v-5h2v5h5V0z+M23%2C18h-5v5h-2v-5h-5v-2h5v-5h2v5h5V18z%27%2F%3E%0A%3C%2Fsvg%3E");
 
 
 
