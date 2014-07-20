@@ -7,7 +7,8 @@
     <link href='http://fonts.googleapis.com/css?family=Volkhov:400,700|Rye' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/f-css-grid.css" />
-    <link rel="stylesheet" href="css/patternbolt.css" />
+    <link rel="stylesheet" href="PatternBolt/css/patternbolt.css" />
+    <link rel="stylesheet" href="css/demo.css" />
     <script src="js/jquery.js"></script>
     <script src="js/pb.js"></script>
 
@@ -24,9 +25,7 @@
     <meta property="twitter:creator" content="@ruggeromotta" />
     <meta property="twitter:title" content="PatternBolt - a SVG patterns library" />
 
-    <!-- Aggiorna il tag html in modo da includere gli attributi itemscope e itemtype. -->
     <html itemscope itemtype="http://schema.org/Product">
-    <!-- Aggiungi i tre tag seguenti all'interno del tag head. -->
     <meta itemprop="name" content="PatternBolt">
     <meta itemprop="description" content="a fine selection of SVG pattern background, packed in a single CSS or SCSS file.">
     <meta itemprop="image" content="http://buseca.github.io/patternbolt/img/thumb.png">
@@ -78,46 +77,46 @@
  
     <div class="intro pb-pattern o-lines-bold">
         <div class="inner-intro">
-            <h2>Background patterns just adding a class!</h2>
-            <p>Patternbolt is a fine selection of SVG pattern background, packed in a single CSS or SCSS file, just include the css file in your project and add a class to your element to insert a pattern.
+            <!-- <h2>Background patterns just adding a class!</h2> -->
+            <p>PatternBolt is a fine selection of SVG pattern background, packed in a single CSS or SCSS file, just include the css file in your project and add a class to your element to insert a pattern.
             <br>
-            You can change color palette changing the background-color of your element and the pattern size changing the background-size of the ':after' element.
             <br>
-            The pattern is added in a added ':after' level, so you can manipulate your DOM element as you want, adding a bg-color, a bg-picture, a gradient, or both. 
+            You can change color palette changing the background-color of your element and the pattern size changing the background-size of the ':after' element. As the pattern is added in a added ':after' level, so you can manipulate your DOM element as you want, adding a bg-color, a bg-picture, a gradient, or both.
             <br>
             As they are vectors they never pixelate, not even on retina screens ;)
             <br>
-            The pattern selection still be under development and will be updated constantly.
+            <br>
+            PS: The pattern selection still be under development and will be updated constantly.
             </p>
         </div>
     </div>
 
-    <br>
-    <!-- 
-    <h3>SVG patterns over flat color</h3>
-    <div class="showcase">
-        <div class="pb-pattern h-lines-bold"></div>
-        <div class="pb-pattern cross-medium"></div>
-        <div class="pb-pattern buseca-1"></div>
-        <div class="pb-pattern h-lines-medium"></div>
-        <div class="pb-pattern h-lines-light"></div>
-        <div class="pb-pattern cross-bold"></div>
-        <div class="pb-pattern cross-light"></div>
-        <div class="pb-pattern cross-medium-thin"></div>
-        <div class="pb-pattern cross-bold-thin"></div>
-        <div class="pb-pattern cross-light-thin"></div>
-        <div class="pb-pattern o-lines-medium"></div>
-        <div class="pb-pattern o-lines-bold"></div>
-        <div class="pb-pattern o-lines-light"></div>
-    </div> -->
-    
-    <br>
 
-    <h3>SVG patterns over random picture</h3>
-    <div class="showcase over-picture">
-        <div class="pb-pattern o-lines-light soft" style="background-image: url('http://lorempixel.com/800/300/?q=z'); background-size: cover;"></div>
-        <div class="pb-pattern cross-light-thin soft" style="background-image: url('http://lorempixel.com/800/300/?q=j'); background-size: cover;"></div>
-        <div class="pb-pattern cross-medium-thin soft" style="background-image: url('http://lorempixel.com/800/300/?q=w'); background-size: cover;"></div>
+    <div class="over-picture pb-pattern cross-bold">
+        <h3>SVG patterns over random picture:</h3>
+        <span class="sub">(yes, you can use a pattern over images, with both the 'img' tag or the 'background-image' property)</span>
+        <div class="box-img pb-pattern o-lines-light over-img">
+            <img src="http://lorempixel.com/800/400/?q=z" alt="">
+        </div>
+    </div>
+
+
+    <div class="showcase all-patterns">
+        <h3>All the available patterns:</h3>
+        <span class="sub">(and more coming soon)</span>
+        <div class="pb-pattern o-lines-light"><span>o-lines-light</span></div>
+        <div class="pb-pattern o-lines-medium"><span>o-lines-medium</span></div>
+        <div class="pb-pattern o-lines-bold"><span>o-lines-bold</span></div>
+        <div class="pb-pattern h-lines-light"><span>h-lines-light</span></div>
+        <div class="pb-pattern h-lines-medium"><span>h-lines-medium</span></div>
+        <div class="pb-pattern h-lines-bold"><span>h-lines-bold</span></div>
+        <div class="pb-pattern cross-light"><span>cross-light</span></div>
+        <div class="pb-pattern cross-medium"><span>cross-medium</span></div>
+        <div class="pb-pattern cross-bold"><span>cross-bold</span></div>
+        <div class="pb-pattern cross-light-thin"><span>cross-light-thin</span></div>
+        <div class="pb-pattern cross-medium-thin"><span>cross-medium-thin</span></div>
+        <div class="pb-pattern cross-bold-thin"><span>cross-bold-thin</span></div>
+        <div class="pb-pattern buseca-1"><span>buseca-1</span></div>
     </div>
 
 
