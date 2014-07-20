@@ -37,4 +37,13 @@ $(document).ready(function(){
 		$('#bg-color-pb').html('.ted { background-color: ' + pbColor + ' ;}')
 	});
 
+
+	// showcase
+	$('.showcase .pb-pattern').hover(function(){
+	  $(this).addClass('active');
+	  }, function(){
+	  $(this).removeClass('active');
+	  }
+	);
+
 });
