@@ -1,10 +1,11 @@
 PatternBolt
 ===========
 
-Patternbolt is a fine selection of SVG pattern background, packed in a single CSS or SCSS file. Just put it in your project and add the right class to your elements. You can change pattern color changing the color variables and the pattern size changing the background-size. 
-The pattern is added in a different level, so you can manipulate your DOM element as you want, adding a background picture, a gradient, or both. 
+Patternbolt is a fine selection of SVG pattern background, packed in a single or SCSS (or CSS ) file.<br>
+Just put it in your project and add the right class to your elements. You can easily change pattern color and the pattern size changing the background css property, check the <a href="http://buseca.github.io/patternbolt/">demo page</a> to see how to do it.
+The pattern is added in a "after" element and your original element still be inalterate and ready for manipulations.
 As they are vectors they never pixelate, not even on retina screens ;) 
-The pattern selection still be under development and will be updated constantly. 
+The pattern selection still be under development, to see the showcase, visit the <a href="http://buseca.github.io/patternbolt/">demo page</a>.
 
 
 
@@ -34,8 +35,6 @@ Here come the list of CSS classes to use the pattern in the library:
 .cross-medium-thin
 .cross-light-thin
 ```
-
-other patterns and other classes will be added soon.
 
 **demo page: http://buseca.github.io/patternbolt/**
 
