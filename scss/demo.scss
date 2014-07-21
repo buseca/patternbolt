@@ -234,6 +234,13 @@ body {
                     background-size: 30px;
                 }
             }
+            &.candy-light,
+            &.candy-medium,
+            &.candy-bold {
+                &:after {
+                    background-size: 80px;
+                }
+            }
             &.active {
                 span {
                     padding: 65px 0;
