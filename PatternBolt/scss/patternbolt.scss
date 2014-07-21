@@ -170,7 +170,21 @@ $candy-bold: url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20id%3D%22Laye
 
 
 
-
+.candy-bold {
+    &:after {
+        background-image: $candy-bold;
+    }
+}
+.candy-medium {
+    &:after {
+        background-image: $candy-medium;
+    }
+}
+.candy-light {
+    &:after {
+        background-image: $candy-light;
+    }
+}
 
 
 
