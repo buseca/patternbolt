@@ -182,10 +182,10 @@ body {
       margin: 0 20px; }
   body .showcase {
     padding: 40px 0;
-    background-color: #33cc99; }
+    background-color: #eee; }
     body .showcase .pb-pattern {
       margin: 8px 0;
-      background-color: #aaa; }
+      background-color: #33cc99; }
       body .showcase .pb-pattern:after {
         opacity: 0.5; }
       body .showcase .pb-pattern span {
