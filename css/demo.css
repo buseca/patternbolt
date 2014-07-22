@@ -8,7 +8,7 @@ body {
   background-color: #eee;
   font-family: 'Volkhov', arial; }
   body .demo.pb-pattern {
-    background-color: #ccc;
+    background-color: #33cc99;
     padding: 40px 0; }
     body .demo.pb-pattern:after {
       opacity: 0.75;
@@ -182,7 +182,7 @@ body {
       margin: 0 20px; }
   body .showcase {
     padding: 40px 0;
-    background-color: #eee; }
+    background-color: #33cc99; }
     body .showcase .pb-pattern {
       margin: 8px 0;
       background-color: #aaa; }
