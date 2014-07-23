@@ -27,6 +27,11 @@ body {
             -o-transition: background-image 0.1s ease-in-out;
             transition: background-image 0.1s ease-in-out;
         }
+        &:hover {
+            &:after {
+                background-size: 32px;
+            }
+        }
         &.iniziale {
             &:after {
                 opacity: 0.8;
