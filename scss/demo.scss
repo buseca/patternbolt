@@ -27,11 +27,6 @@ body {
             -o-transition: background-image 0.1s ease-in-out;
             transition: background-image 0.1s ease-in-out;
         }
-        &:hover {
-            &:after {
-                background-size: 32px;
-            }
-        }
         &.iniziale {
             &:after {
                 opacity: 0.8;
@@ -92,7 +87,7 @@ body {
             margin-right: 30px;
             border: none;
             box-shadow: 0 0 0px 8px rgba(0,0,0,0.2);
-            background-color: #DDD;
+            background-color: lightcoral;
             outline-color: 0px solid transparent !important;
             &:after {
                 background-size: 6px;
@@ -112,13 +107,16 @@ body {
             &:focus, &:active {
                 outline-color: 0px solid transparent !important;
             }
+            &.dwnld {
+                background-color: lightskyblue;
+            }
             a{
                 text-decoration: none;
                 color: inherit;
             }
         }
         a{
-            color: #0183ff;
+            color: #0563BC;
             &:hover {
                 text-decoration: none;
             }
