@@ -82,7 +82,7 @@ body {
       margin-right: 30px;
       border: none;
       box-shadow: 0 0 0px 8px rgba(0, 0, 0, 0.2);
-      background-color: #DDD;
+      background-color: lightcoral;
       outline-color: 0px solid transparent !important; }
       body nav button.pb-pattern:after {
         background-size: 6px; }
@@ -98,11 +98,13 @@ body {
           box-shadow: 0 0 0px 8px rgba(0, 0, 0, 0.25); }
       body nav button.pb-pattern:focus, body nav button.pb-pattern:active {
         outline-color: 0px solid transparent !important; }
+      body nav button.pb-pattern.dwnld {
+        background-color: lightskyblue; }
       body nav button.pb-pattern a {
         text-decoration: none;
         color: inherit; }
     body nav a {
-      color: #0183ff; }
+      color: #0563BC; }
       body nav a:hover {
         text-decoration: none; }
   body .controls {
