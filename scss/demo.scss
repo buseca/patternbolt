@@ -209,6 +209,12 @@ body {
             text-align: center;
             margin: 0 20px;
         }
+        .over-img.box-img.pb-pattern {
+            &:after {
+                background-size: 6px;
+                opacity: 0.2;
+            }
+        }
     }
 
     .showcase {
