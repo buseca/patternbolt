@@ -40,26 +40,26 @@ body {
       background-size: 15px; }
     body .demo.pb-pattern.cross-medium:after {
       background-size: 10px; }
-    body .demo.pb-pattern.pb-size-5:after {
-      background-size: 5px; }
     body .demo.pb-pattern.pb-size-10:after {
       background-size: 10px; }
-    body .demo.pb-pattern.pb-size-15:after {
-      background-size: 15px; }
     body .demo.pb-pattern.pb-size-20:after {
       background-size: 20px; }
-    body .demo.pb-pattern.pb-size-25:after {
-      background-size: 25px; }
     body .demo.pb-pattern.pb-size-30:after {
       background-size: 30px; }
-    body .demo.pb-pattern.pb-size-35:after {
-      background-size: 35px; }
     body .demo.pb-pattern.pb-size-40:after {
       background-size: 40px; }
-    body .demo.pb-pattern.pb-size-45:after {
-      background-size: 45px; }
     body .demo.pb-pattern.pb-size-50:after {
       background-size: 50px; }
+    body .demo.pb-pattern.pb-size-60:after {
+      background-size: 60px; }
+    body .demo.pb-pattern.pb-size-70:after {
+      background-size: 70px; }
+    body .demo.pb-pattern.pb-size-80:after {
+      background-size: 80px; }
+    body .demo.pb-pattern.pb-size-90:after {
+      background-size: 90px; }
+    body .demo.pb-pattern.pb-size-100:after {
+      background-size: 100px; }
   body h1 {
     font-family: 'Rye', arial;
     font-weight: normal;
