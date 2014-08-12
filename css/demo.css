@@ -185,15 +185,15 @@ body {
     body .over-picture .over-img.box-img.pb-pattern:after {
       background-size: 6px;
       opacity: 0.2; }
-  body .showcase {
+  body #showcase {
     padding: 40px 0;
     background-color: #eee; }
-    body .showcase .pb-pattern {
+    body #showcase .pb-pattern {
       margin: 8px 0;
       background-color: #33cc99; }
-      body .showcase .pb-pattern:after {
+      body #showcase .pb-pattern:after {
         opacity: 0.5; }
-      body .showcase .pb-pattern span {
+      body #showcase .pb-pattern span {
         text-align: center;
         display: block;
         padding: 35px 0;
@@ -204,11 +204,23 @@ body {
         -ms-transition: all 0.1s ease-in-out;
         -o-transition: all 0.1s ease-in-out;
         transition: all 0.1s ease-in-out; }
-      body .showcase .pb-pattern.buseca-1:after {
-        background-size: 30px; }
-      body .showcase .pb-pattern.candy-light:after, body .showcase .pb-pattern.candy-medium:after, body .showcase .pb-pattern.candy-bold:after {
-        background-size: 100px; }
-      body .showcase .pb-pattern.active span {
+      body #showcase .pb-pattern.buseca-1 {
+        background-color: #ff9659; }
+        body #showcase .pb-pattern.buseca-1:after {
+          background-size: 30px; }
+      body #showcase .pb-pattern.o-lines-bold, body #showcase .pb-pattern.o-lines-medium, body #showcase .pb-pattern.o-lines-light {
+        background-color: #61d966; }
+      body #showcase .pb-pattern.h-lines-bold, body #showcase .pb-pattern.h-lines-medium, body #showcase .pb-pattern.h-lines-light {
+        background-color: #44d6da; }
+      body #showcase .pb-pattern.cross-bold, body #showcase .pb-pattern.cross-medium, body #showcase .pb-pattern.cross-light {
+        background-color: #0083d5; }
+      body #showcase .pb-pattern.cross-bold-thin, body #showcase .pb-pattern.cross-medium-thin, body #showcase .pb-pattern.cross-light-thin {
+        background-color: #e47b72; }
+      body #showcase .pb-pattern.candy-light, body #showcase .pb-pattern.candy-medium, body #showcase .pb-pattern.candy-bold {
+        background-color: magenta; }
+        body #showcase .pb-pattern.candy-light:after, body #showcase .pb-pattern.candy-medium:after, body #showcase .pb-pattern.candy-bold:after {
+          background-size: 100px; }
+      body #showcase .pb-pattern.active span {
         padding: 65px 0;
         font-size: 18px;
         font-weight: bold; }
