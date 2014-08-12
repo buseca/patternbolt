@@ -51,16 +51,16 @@ body {
         &.cross-medium-thin:after { background-size: 15px; }
         &.cross-medium:after { background-size: 10px; }
 
-        &.pb-size-5:after {background-size: 5px;}
         &.pb-size-10:after {background-size: 10px;}
-        &.pb-size-15:after {background-size: 15px;}
         &.pb-size-20:after {background-size: 20px;}
-        &.pb-size-25:after {background-size: 25px;}
         &.pb-size-30:after {background-size: 30px;}
-        &.pb-size-35:after {background-size: 35px;}
         &.pb-size-40:after {background-size: 40px;}
-        &.pb-size-45:after {background-size: 45px;}
         &.pb-size-50:after {background-size: 50px;}
+        &.pb-size-60:after {background-size: 60px;}
+        &.pb-size-70:after {background-size: 70px;}
+        &.pb-size-80:after {background-size: 80px;}
+        &.pb-size-90:after {background-size: 90px;}
+        &.pb-size-100:after {background-size: 100px;}
     }
     h1 {
         font-family: 'Rye', arial;
@@ -87,7 +87,7 @@ body {
             margin-right: 30px;
             border: none;
             box-shadow: 0 0 0px 8px rgba(0,0,0,0.2);
-            background-color: #DDD;
+            background-color: lightcoral;
             outline-color: 0px solid transparent !important;
             &:after {
                 background-size: 6px;
@@ -107,13 +107,16 @@ body {
             &:focus, &:active {
                 outline-color: 0px solid transparent !important;
             }
+            &.dwnld {
+                background-color: lightskyblue;
+            }
             a{
                 text-decoration: none;
                 color: inherit;
             }
         }
         a{
-            color: #0183ff;
+            color: #0563BC;
             &:hover {
                 text-decoration: none;
             }
@@ -205,6 +208,12 @@ body {
         .pb-pattern {
             text-align: center;
             margin: 0 20px;
+        }
+        .over-img.box-img.pb-pattern {
+            &:after {
+                background-size: 6px;
+                opacity: 0.2;
+            }
         }
     }
 
