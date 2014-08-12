@@ -40,26 +40,26 @@ body {
       background-size: 15px; }
     body .demo.pb-pattern.cross-medium:after {
       background-size: 10px; }
+    body .demo.pb-pattern.pb-size-5:after {
+      background-size: 5px; }
     body .demo.pb-pattern.pb-size-10:after {
       background-size: 10px; }
+    body .demo.pb-pattern.pb-size-15:after {
+      background-size: 15px; }
     body .demo.pb-pattern.pb-size-20:after {
       background-size: 20px; }
+    body .demo.pb-pattern.pb-size-25:after {
+      background-size: 25px; }
     body .demo.pb-pattern.pb-size-30:after {
       background-size: 30px; }
+    body .demo.pb-pattern.pb-size-35:after {
+      background-size: 35px; }
     body .demo.pb-pattern.pb-size-40:after {
       background-size: 40px; }
+    body .demo.pb-pattern.pb-size-45:after {
+      background-size: 45px; }
     body .demo.pb-pattern.pb-size-50:after {
       background-size: 50px; }
-    body .demo.pb-pattern.pb-size-60:after {
-      background-size: 60px; }
-    body .demo.pb-pattern.pb-size-70:after {
-      background-size: 70px; }
-    body .demo.pb-pattern.pb-size-80:after {
-      background-size: 80px; }
-    body .demo.pb-pattern.pb-size-90:after {
-      background-size: 90px; }
-    body .demo.pb-pattern.pb-size-100:after {
-      background-size: 100px; }
   body h1 {
     font-family: 'Rye', arial;
     font-weight: normal;
@@ -82,7 +82,7 @@ body {
       margin-right: 30px;
       border: none;
       box-shadow: 0 0 0px 8px rgba(0, 0, 0, 0.2);
-      background-color: lightcoral;
+      background-color: #DDD;
       outline-color: 0px solid transparent !important; }
       body nav button.pb-pattern:after {
         background-size: 6px; }
@@ -98,13 +98,11 @@ body {
           box-shadow: 0 0 0px 8px rgba(0, 0, 0, 0.25); }
       body nav button.pb-pattern:focus, body nav button.pb-pattern:active {
         outline-color: 0px solid transparent !important; }
-      body nav button.pb-pattern.dwnld {
-        background-color: lightskyblue; }
       body nav button.pb-pattern a {
         text-decoration: none;
         color: inherit; }
     body nav a {
-      color: #0563BC; }
+      color: #0183ff; }
       body nav a:hover {
         text-decoration: none; }
   body .controls {
@@ -182,9 +180,6 @@ body {
     body .over-picture .pb-pattern {
       text-align: center;
       margin: 0 20px; }
-    body .over-picture .over-img.box-img.pb-pattern:after {
-      background-size: 6px;
-      opacity: 0.2; }
   body .showcase {
     padding: 40px 0;
     background-color: #eee; }
