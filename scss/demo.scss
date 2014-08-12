@@ -42,7 +42,7 @@ body {
                 background-image: $cross-light;
                 background-size: 30px!important;
                 opacity: 0.4;
-                } 
+                }
             }
         }
         &.buseca-1:after { background-size: 30px; }
@@ -217,7 +217,7 @@ body {
         }
     }
 
-    #showcase {
+    .showcase {
         padding: 40px 0;
         background-color: #eee;
         .pb-pattern {
@@ -239,35 +239,13 @@ body {
                 transition: all 0.1s ease-in-out;
             }
             &.buseca-1 {
-                background-color: #ff9659;
                 &:after {
                     background-size: 30px;
                 }
             }
-            &.o-lines-bold,
-            &.o-lines-medium,
-            &.o-lines-light {
-                background-color: #61d966;
-            }
-            &.h-lines-bold,
-            &.h-lines-medium,
-            &.h-lines-light {
-                background-color: #44d6da;
-            }
-            &.cross-bold,
-            &.cross-medium,
-            &.cross-light {
-                background-color: #0083d5;
-            }
-            &.cross-bold-thin,
-            &.cross-medium-thin,
-            &.cross-light-thin {
-                background-color: #e47b72;
-            }
             &.candy-light,
             &.candy-medium,
             &.candy-bold {
-                background-color: magenta;
                 &:after {
                     background-size: 100px;
                 }
