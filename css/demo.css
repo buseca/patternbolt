@@ -85,7 +85,8 @@ body {
       background-color: lightcoral;
       outline-color: 0px solid transparent !important; }
       body nav button.pb-pattern:after {
-        background-size: 6px; }
+        background-size: 6px;
+        opacity: 0.3; }
       body nav button.pb-pattern:hover {
         outline-color: 0px solid transparent !important; }
         body nav button.pb-pattern:hover:after {
@@ -104,7 +105,7 @@ body {
         text-decoration: none;
         color: inherit; }
     body nav a {
-      color: #0563BC; }
+      color: #222222; }
       body nav a:hover {
         text-decoration: none; }
   body .controls {

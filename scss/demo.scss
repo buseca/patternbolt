@@ -91,6 +91,7 @@ body {
             outline-color: 0px solid transparent !important;
             &:after {
                 background-size: 6px;
+                opacity: 0.3
             }
             &:hover {
                 outline-color: 0px solid transparent !important;
@@ -116,7 +117,7 @@ body {
             }
         }
         a{
-            color: #0563BC;
+            color: #222222;
             &:hover {
                 text-decoration: none;
             }
