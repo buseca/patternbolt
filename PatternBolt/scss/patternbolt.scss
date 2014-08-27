@@ -89,6 +89,13 @@ $candy-bold: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/200
             z-index: 0;
         }
     }
+    
+    // the class 'mirror' will mirror the pattern horizontally
+    &.mirror {
+        &:after {
+            trasform: rotateY(180deg);
+        }
+    }
 }
 
 .pb-pattern {
