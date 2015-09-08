@@ -214,7 +214,7 @@
   }
 }
 
-// The class 'pb--over' makes the pattern semi-transparent for placing over a
+// The 'pb--over' placeholder makes the pattern semi-transparent for placing over a
 // picture.
 %pb--over {
   &::after {
@@ -223,7 +223,7 @@
   }
 }
 
-// The class 'pb--mirror' will mirror the pattern horizontally.
+// The 'pb--mirror' placeholder will mirror the pattern horizontally.
 // %pb--mirror {
 //   &::after {
 //     transform: rotateY(180deg);
