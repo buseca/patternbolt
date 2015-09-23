@@ -86,7 +86,7 @@ Basically you can call the whole Patternbolt Scss file in your project with an @
       }
     }
 
-<hr>
+
 
 ##CSS version
 Just include it in your project whith this:
@@ -111,7 +111,7 @@ Here come the list of CSS pattern classes in the library:
     .cross-light-thin
 
 
-<hr>
+
 ##More info
 
 You can check the demo pagea at http://buseca.github.io/patternbolt/<br>
