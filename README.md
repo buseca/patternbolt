@@ -25,7 +25,7 @@ Basically you can call the whole Patternbolt Scss file in your project with an @
 
     @mixin pb($pattern){}
 
-####example
+**example**
 
     .item {
        @include pb('buseca-1');
@@ -57,7 +57,7 @@ Basically you can call the whole Patternbolt Scss file in your project with an @
 
     @mixin pb($pattern, $background-size, $background-color, $foreground-color, $opacity, $mask){}
 
-####example
+**example**
 
     .item {
       @include pb('buseca-1', 25px, #f00, #0f0, 0.5, 'mask');
