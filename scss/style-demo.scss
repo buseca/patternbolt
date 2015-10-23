@@ -1,0 +1,71 @@
+@charset 'UTF-8';
+@import '../PatternBolt/scss/patternbolt.scss';
+
+
+.selecta {
+}   
+
+.item {
+    @include pb('buseca-1', 50px, crimson, #fff, 1, 'none');
+    height: 300px;
+    border: 10px solid white;
+    &:nth-child(2) {
+        @include pb('o-lines-bold', 50px, crimson, #fff, 1, 'none');
+    }
+    &:nth-child(3) {
+        @include pb('h-lines-bold', 5px, crimson, #fff, 1, 'none');
+    }
+}
+
+.overlay {
+    position: fixed!important;
+    top: 45%;
+    left: 45%;
+    right: 45%;
+    bottom: 45%;
+    opacity: 0;
+    transition: opacity .2s, top 0.3s, left 0.3s, right 0.3s, bottom 0.3s ;
+    @include pb('o-lines-medium', 20px, crimson, #fff, 1, 'none');
+    &.go {
+        display: block;
+        opacity: 1;
+        top: 0;
+        left:0;
+        right:0;
+        bottom:0;
+    }
+    button {
+        margin: 30px;
+        padding: 10px 20px;
+        background-color: black;
+        color: white;
+        border: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
