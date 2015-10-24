@@ -1,45 +1,101 @@
 @charset 'UTF-8';
 @import '../PatternBolt/scss/patternbolt.scss';
 
-
-.selecta {
-}   
-
-.item {
-    @include pb('buseca-1', 50px, crimson, #fff, 1, 'none');
-    height: 300px;
-    border: 10px solid white;
-    &:nth-child(2) {
-        @include pb('o-lines-bold', 50px, crimson, #fff, 1, 'none');
-    }
-    &:nth-child(3) {
-        @include pb('h-lines-bold', 5px, crimson, #fff, 1, 'none');
+header {
+    height: 100px;
+    background: crimson;
+    border-bottom: 10px solid white;
+    h1 {
+        color: white;
     }
 }
 
-.overlay {
-    position: fixed!important;
-    top: 45%;
-    left: 45%;
-    right: 45%;
-    bottom: 45%;
-    opacity: 0;
-    transition: opacity .2s, top 0.3s, left 0.3s, right 0.3s, bottom 0.3s ;
-    @include pb('o-lines-medium', 20px, crimson, #fff, 1, 'none');
-    &.go {
-        display: block;
-        opacity: 1;
-        top: 0;
-        left:0;
-        right:0;
-        bottom:0;
+.selecta {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    .item.reduce {
+        width:0;
+        height: 0;
     }
-    button {
-        margin: 30px;
-        padding: 10px 20px;
-        background-color: black;
-        color: white;
-        border: none;
+}   
+
+.item {
+    height: 250px;
+    width: 250px;
+    transition: width .3s, height .3s;
+    &.expand {
+        position: fixed;
+        width: 100%;
+        height: calc( 100vh - 100px );
+        &:after {
+            animation: changecolor 4s infinite;
+        }
+    }
+    &:after {
+        transition: background-color .5s;
+    }
+    
+
+
+    &:nth-child(1) {
+        @include pb('buseca-1', 50px, crimson, #fff, 1, 'none');
+        &:hover {
+            @include pb('buseca-1', 50px, #333, #ccc, 1, 'none');
+        }
+    }
+    &:nth-child(2) {
+        @include pb('o-lines-bold', 50px, crimson, #fff, 1, 'none');
+        &:hover {
+            @include pb('o-lines-bold', 50px, #333, #ccc, 1, 'none');
+        }
+    }
+    &:nth-child(3) {
+        @include pb('h-lines-bold', 5px, crimson, #fff, 1, 'none');
+        &:hover {
+            @include pb('h-lines-bold', 5px, #333, #ccc, 1, 'none');
+        }
+    }
+    &:nth-child(4) {
+        @include pb('feather', 100px, crimson, #fff, 1, 'none');
+        &:hover {
+            @include pb('feather', 100px, #333, #ccc, 1, 'none');
+        }
+    }
+    &:nth-child(5) {
+        @include pb('o-lines-bold', 50px, crimson, #fff, 1, 'none');
+        &:hover {
+            @include pb('o-lines-bold', 50px, #333, #ccc, 1, 'none');
+        }
+    }
+    &:nth-child(6) {
+        @include pb('h-lines-medium', 5px, crimson, #fff, 1, 'none');
+        &:hover {
+            @include pb('h-lines-medium', 5px, #333, #ccc, 1, 'none');
+        }
+    }
+}
+
+
+
+
+@keyframes changecolor{
+    from {
+        background-color: #ccc;
+    }
+    25% {
+        background-color: purple;
+    }
+    50% {
+        background-color: lightgreen;
+    }
+    75% {
+        background-color: gold;
+    }
+    to {
+        background-color: #ccc;
     }
 }
 

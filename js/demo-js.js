@@ -14,6 +14,16 @@ $(document).ready(function(){
 
 
 
+	$(".item").click(function () {
+		$('.selecta').removeClass('showing-all');
+		$('.item').addClass('reduce');
+		$(this).removeClass('reduce');
+		$(this).addClass('expand');
+	});
+
+
+
+
 
 
 
