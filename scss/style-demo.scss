@@ -4,10 +4,15 @@
 header {
     height: 100px;
     background: crimson;
+    animation: changeheader 10s infinite;
     border-bottom: 10px solid white;
     h1 {
         color: white;
         margin: 0;
+        font-family: Volkhov, helvetica, sans-serif;
+        padding: 22px 0 0 0;
+        text-align: center;
+        font-size: 46px;
     }
 }
 
@@ -16,9 +21,9 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-around;
-    align-content: shrink;
+    // align-content: shrink;
     .item.reduce {
         width:0;
         height: 0;
@@ -27,8 +32,8 @@ header {
 
 // style generali degli item
 .item {
-    height: 250px;
-    width: 250px;
+    height: 280px;
+    width: 280px;
     margin: 0 5px 10px 5px;
     transition: width .3s, height .3s;
     &.expand {
@@ -158,6 +163,17 @@ header {
     }
 }
 
+@keyframes changeheader {
+    from {
+        background-color: crimson;
+    }
+    50% {
+        background-color: tomato;
+    }
+    to {
+        background-color: crimson;
+    }
+}
 
 
 
