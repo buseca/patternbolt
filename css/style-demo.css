@@ -22,6 +22,36 @@ header {
     width: 0;
     height: 0; }
 
+.controllers {
+  position: absolute;
+  bottom: 20px;
+  right: -400px;
+  z-index: 200;
+  transition: right 0.5s; }
+  .controllers.showit {
+    right: 20px; }
+  .controllers div {
+    padding: 10px;
+    margin-left: 10px;
+    background-color: black;
+    color: white;
+    float: left;
+    width: 80px;
+    height: 80px;
+    font-size: 12px;
+    text-align: center;
+    opacity: 0.8;
+    cursor: pointer; }
+    .controllers div span {
+      display: block;
+      padding: 8px 0;
+      font-size: 32px;
+      font-weight: bold; }
+    .controllers div:hover {
+      opacity: 1; }
+    .controllers div:active {
+      opacity: 0.8; }
+
 .item {
   height: 280px;
   width: 280px;
@@ -295,6 +325,19 @@ header {
     background-image: url("data:image/svg+xml,%3Csvg%20version%3D%271.1%27%20id%3D%27Layer_1%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20xmlns%3Axlink%3D%27http%3A//www.w3.org/1999/xlink%27%20x%3D%270px%27%20y%3D%270px%27%0A%20%20%20%20%20width%3D%2710px%27%20height%3D%2710px%27%20viewBox%3D%270%200%2010%2010%27%20enable-background%3D%27new%200%200%2010%2010%27%20xml%3Aspace%3D%27preserve%27%3E%0A%3Crect%20fill%3D%27#cccccc%27%20width%3D%2710%27%20height%3D%273%27/%3E%0A%3C/svg%3E");
     content: '';
     z-index: -1; }
+
+.selecta .expand.xsmall::after {
+  background-size: 5px; }
+.selecta .expand.small::after {
+  background-size: 15px; }
+.selecta .expand.medium::after {
+  background-size: 30px; }
+.selecta .expand.large::after {
+  background-size: 50px; }
+.selecta .expand.xlarge::after {
+  background-size: 80px; }
+.selecta .expand.xxlarge::after {
+  background-size: 120px; }
 
 @keyframes changecolor {
   from {

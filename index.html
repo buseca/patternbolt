@@ -7,11 +7,11 @@
     <link href='http://fonts.googleapis.com/css?family=Volkhov:400,700|Rye' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/f-css-grid.css" />
-    <link rel="stylesheet" href="css/demo.css" />
+    <link rel="stylesheet" href="css/style-demo.css" />
     <script src="js/jquery.js"></script>
-    <script src="js/pb.js"></script>
+    <script src="js/demo-js.js"></script>
 
-    <meta property="og:url" content="http://buseca.github.io/patternbolt/" />
+    <!-- <meta property="og:url" content="http://buseca.github.io/patternbolt/" />
     <meta property="og:patternbolt" content="a SVG patterns library" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="PatternBolt" />
@@ -27,114 +27,29 @@
     <html itemscope itemtype="http://schema.org/Product">
     <meta itemprop="name" content="PatternBolt">
     <meta itemprop="description" content="a fine selection of SVG pattern background, packed in a single CSS or SCSS file.">
-    <meta itemprop="image" content="http://buseca.github.io/patternbolt/img/thumb.png">
-
+    <meta itemprop="image" content="http://buseca.github.io/patternbolt/img/thumb.png"> -->
 
   </head>
 
   <body>
-    <img src="http://buseca.github.io/patternbolt/img/thumb.png" alt="PatternBolt" style="display: none;">
-
-    <div class="demo pb-pattern sedici iniziale">
+    <header>
         <h1>PatternBolt</h1>
-        <h2> Patternbolt is a fine selection of SVG pattern background,<br>packed in a single CSS or SCSS file.</h2>
-        <nav>
-            <button class="pb-pattern tre dwnld"><a href="https://github.com/buseca/patternbolt/archive/gh-pages.zip">Download demo</a></button>
-            <button class="pb-pattern tre git"><a href="https://github.com/buseca/patternbolt">Github repo</a></button>
-            <a href="https://twitter.com/ruggeromotta" class="twitter">@ruggeromotta</a>
-        </nav>  
+    </header>
+
+    <div class="selecta showing-all">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
     </div>
 
-    <div class="controls">
-        <div class="row">
-            <div class="columns large-8 medium-8">
-                <h3>select a pattern</h3>
-                <div id="uno" class="pb-pattern uno tasto tasto-1"></div>
-                <div id="due" class="pb-pattern due tasto tasto-2"></div>
-                <div id="tre" class="pb-pattern tre tasto tasto-3"></div>
-                <div id="quattro" class="pb-pattern quattro tasto tasto-4"></div>
-                <div id="cinque" class="pb-pattern cinque tasto tasto-5"></div>
-                <div id="sei" class="pb-pattern sei tasto tasto-6"></div>
-                <div id="sette" class="pb-pattern sette tasto tasto-7"></div>
-                <div id="otto" class="pb-pattern otto tasto tasto-8"></div>
-                <div id="nove" class="pb-pattern nove tasto tasto-9"></div>
-                <div id="dieci" class="pb-pattern dieci tasto tasto-10"></div>
-                <div id="undici" class="pb-pattern undici tasto tasto-11"></div>
-                <div id="dodici" class="pb-pattern dodici tasto tasto-12"></div>
-                <div id="tredici" class="pb-pattern tredici tasto tasto-13"></div>
-                <div id="quattordici" class="pb-pattern quattordici tasto tasto-14"></div>
-                <div id="quindici" class="pb-pattern quindici tasto tasto-15"></div>
-                <div id="sedici" class="pb-pattern sedici tasto tasto-16 active"></div>
-                <code id="classe-pb">class="ted pb-pattern <span>o-lines-bold</span>"</code>
-            </div>
-            <div class="columns large-4 medium-4">
-                <div class="columns large-12 medium-12">
-                    <h3>change the size</h3>
-                    <input type="range" id="size-pattern" max="100" min="10" step="10" value="50">
-                    <code id="bg-size-pb">.ted:after { background-size: auto ;}</code>
-                </div>
-                <div class="columns large-12 medium-12">
-                    <br>
-                    <br>
-                    <br>
-                    <h3>select a color</h3>
-                    <input id="color-pattern" type="color" value="#FBD333">
-                    <code id="bg-color-pb">.ted { background-color: #FBD333 ;}</code>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-    
- 
-    <div class="intro">
-        <div class="inner-intro">
-            <!-- <h2>Background patterns just adding a class!</h2> -->
-            <p>PatternBolt is a fine selection of SVG pattern background, packed in a single CSS or SASS (scss) file, just include the css file in your project and add a class to your element to insert a pattern.
-            <br>
-            <br>
-            You can change color palette changing the background-color of your element and the pattern size changing the background-size of the ':after' element. As the pattern is added in a ':after' level, you still can manipulate your DOM element as you want, adding a bg-color, a bg-picture, a gradient, or both.
-            <br>
-            As they are vectors they never pixelate, not even on retina screens ;)
-            <br>
-            <br>
-            PS: The pattern selection still be under development, go to the bottom to see the showcase.
-            </p>
-        </div>
-    </div>
-
-
-    <div class="over-picture pb-pattern cross-bold">
-        <h3>SVG patterns over a picture:</h3>
-        <span class="sub">(you can use a pattern over images, with both the 'img' tag or the 'background-image' property)</span>
-        <div class="box-img pb-pattern o-lines-bold over-img">
-            <img src="img/shuttle.jpg" alt="">
-        </div>
-    </div>
-
-
-    <div id="showcase" class="showcase all-patterns">
-        <h3>All the available patterns:</h3>
-        <span class="sub">(and more coming soon)</span>
-        <div class="pb-pattern uno"><span>o-lines-light</span></div>
-        <div class="pb-pattern due"><span>o-lines-medium</span></div>
-        <div class="pb-pattern tre"><span>o-lines-bold</span></div>
-        <div class="pb-pattern quattro"><span>h-lines-light</span></div>
-        <div class="pb-pattern cinque"><span>h-lines-medium</span></div>
-        <div class="pb-pattern sei"><span>h-lines-bold</span></div>
-        <div class="pb-pattern sette"><span>cross-light</span></div>
-        <div class="pb-pattern otto"><span>cross-medium</span></div>
-        <div class="pb-pattern nove"><span>cross-bold</span></div>
-        <div class="pb-pattern dieci"><span>cross-light-thin</span></div>
-        <div class="pb-pattern undici"><span>cross-medium-thin</span></div>
-        <div class="pb-pattern dodici"><span>cross-bold-thin</span></div>
-        <div class="pb-pattern tredici"><span>buseca-1</span></div>
-        <div class="pb-pattern quattordici"><span>candy-light</span></div>
-        <div class="pb-pattern quindici"><span>candy-medium</span></div>
-        <div class="pb-pattern sedici"><span>feather</span></div>
+    <div class="controllers">
+        <div class="zoomin"><span>+</span>Zoom In</div>
+        <div class="zoomout"><span>-</span>Zoom Out</div>
     </div>
 
 

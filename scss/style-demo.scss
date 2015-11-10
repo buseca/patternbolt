@@ -30,6 +30,46 @@ header {
     }
 }   
 
+
+// the controllers buttons
+.controllers {
+    position: absolute;
+    bottom: 20px;
+    right: -400px;
+    z-index: 200;
+    transition: right 0.5s;
+    &.showit {
+        right: 20px;
+    }
+    div {
+        padding: 10px;
+        margin-left: 10px;
+        background-color: black;
+        color: white;
+        float: left;
+        width: 80px;
+        height: 80px;
+        font-size: 12px;
+        text-align: center;
+        opacity: 0.8;
+        cursor: pointer;
+        span {
+            display: block;
+            padding: 8px 0;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        &:hover {
+            opacity: 1;
+        }
+        &:active {
+            opacity: 0.8;
+        }
+    }
+}
+
+
+
 // style generali degli item
 .item {
     height: 280px;
@@ -121,6 +161,20 @@ header {
                 @include pb('h-lines-medium', 10px, #333, #ccc, 1, 'none');
             }
         }
+    }
+}
+
+
+
+// style dell'item expanded
+.selecta {
+    .expand {
+        &.xsmall::after { background-size: 5px; }
+        &.small::after { background-size: 15px; }
+        &.medium::after { background-size: 30px; }
+        &.large::after { background-size: 50px; }
+        &.xlarge::after { background-size: 80px; }
+        &.xxlarge::after { background-size: 120px; }
     }
 }
 
