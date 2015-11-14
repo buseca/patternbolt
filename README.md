@@ -6,8 +6,8 @@ The pattern is added in a "after" element and your original element still be ina
 The pattern selection still be under development, to see the showcase, visit the <a href="http://buseca.github.io/patternbolt/">demo page</a>
 
 ##Contributions
-Contributions and pull requests are always welcome.
-If you are a Designer you can vote and submit new patterns joining the public <a href="https://trello.com/b/qlC1dtZa/patternbolt-new-patterns-proposals" target="_blank">Trello Board</a>. Contact me by twitter or email to request to be added as member to the board.
+Contributions and pull requests are always welcome.<br>
+If you are a **Designer** you can vote and submit new patterns joining the public <a href="https://trello.com/b/qlC1dtZa/patternbolt-new-patterns-proposals" target="_blank">Trello Board</a>. Contact me by twitter or email to request to be added as member of the board.
 
 ##SCSS version
 The Scss version is the main one, it's the more advanced one and its pattern library is always up-to-date.<br>
@@ -121,5 +121,5 @@ Here come the list of CSS pattern classes in the library:
 
 ##More info
 
-You can check the demo pagea at http://buseca.github.io/patternbolt/<br>
+You can check the demo page at http://buseca.github.io/patternbolt/<br>
 You can find me on twitter: **<a href="https://twitter.com/ruggeromotta">@ruggeromotta</a>**
