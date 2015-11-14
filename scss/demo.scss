@@ -1,5 +1,5 @@
 @charset 'UTF-8';
-
+@import '../PatternBolt/scss/patternbolt.scss';
 
 // svg for the github button transition
 $cross-light: url("data:image/svg+xml,%3Csvg%20version%3D%271.1%27%20id%3D%27Layer_1%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20xmlns%3Axlink%3D%27http%3A//www.w3.org/1999/xlink%27%20x%3D%270px%27%20y%3D%270px%27%0A%20%20%20%20%20width%3D%2722px%27%20height%3D%2722px%27%20viewBox%3D%270%200%2022%2022%27%20enable-background%3D%27new%200%200%2022%2022%27%20xml%3Aspace%3D%27preserve%27%3E%0A%3Cpath%20fill%3D%27#ffffff%27%20d%3D%27M12%2C7H7v5H5V7H0V5h5V0h2v5h5V7z%20M22%2C16h-4v-5h-2v5h-5v2h5v4h2v-4h4V16z%20M16%2C1h2V0h-2V1z%20M0%2C18h1v-2H0V18z%27/%3E%0A%3C/svg%3E");
@@ -16,21 +16,14 @@ body {
     background-color: #eee;
     font-family: 'Volkhov', arial;
     .demo.pb-pattern {
-        background-color: #33cc99;
+        background-color: gold;
         padding: 40px 0;
         &:after {
             opacity: 0.75;
-            background-size: 20px;
-            -webkit-transition: background-image 0.1s ease-in-out;
-            -moz-transition: background-image 0.1s ease-in-out;
-            -ms-transition: background-image 0.1s ease-in-out;
-            -o-transition: background-image 0.1s ease-in-out;
-            transition: background-image 0.1s ease-in-out;
         }
         &.iniziale {
             &:after {
-                opacity: 0.8;
-                background-size: 20px;
+                opacity: 0.4;
                 -webkit-transition: background-size 0.1s ease-in-out;
                 -moz-transition: background-size 0.1s ease-in-out;
                 -ms-transition: background-size 0.1s ease-in-out;
@@ -38,19 +31,9 @@ body {
                 transition: background-size 0.1s ease-in-out;
             }
             &.over {
-                &:after {
-                background-image: $cross-light;
-                background-size: 30px!important;
-                opacity: 0.4;
-                } 
+                @extend .tre;
             }
         }
-        &.buseca-1:after { background-size: 30px; }
-        &.h-lines-bold:after { background-size: 6px; }
-        &.o-lines-bold:after { background-size: 40px; }
-        &.cross-medium-thin:after { background-size: 15px; }
-        &.cross-medium:after { background-size: 10px; }
-
         &.pb-size-10:after {background-size: 10px;}
         &.pb-size-20:after {background-size: 20px;}
         &.pb-size-30:after {background-size: 30px;}
@@ -87,7 +70,7 @@ body {
             margin-right: 30px;
             border: none;
             box-shadow: 0 0 0px 8px rgba(0,0,0,0.2);
-            background-color: lightcoral;
+            background-color: deepskyblue;
             outline-color: 0px solid transparent !important;
             &:after {
                 background-size: 6px;
@@ -109,7 +92,7 @@ body {
                 outline-color: 0px solid transparent !important;
             }
             &.dwnld {
-                background-color: lightskyblue;
+                background-color: white;
             }
             a{
                 text-decoration: none;
@@ -142,36 +125,29 @@ body {
         }
     }
     .tasto {
-        width: 17%;
-        height: 80px;
-        margin: 0 1%;
+        width: 20%;
+        height: 64px;
+        margin: 2%!important;
         display: inline-block;
-        background-color: #555555;
-        border: 3px solid #fff;
-        box-shadow: 0 0 4px 2px rgba(0,0,0,0.3);
-        border-radius: 8px;
-        -moz-border-radius: 8px;
+        border: 1px solid #222;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
         cursor: pointer;
-        &:after {
-            background-size: 20px;
-            border-radius: 8px;
-            -moz-border-radius: 8px;
-            box-shadow: inset 0 0 8px 3px rgba(0,0,0,0.5);
-        }
-        &:hover {
-            background-color: #888;
-        }
-        &.active {
-            background-color: lightgrey;
+        &.pb-pattern {
+            background-color: #fff;
             &:hover {
-                background-color: lightgrey;
+                background-color: deepskyblue;
+            }
+            &.active {
+                background-color: deepskyblue;
             }
         }
-        &.tasto-1:after { background-size: 40px;}
-        &.tasto-2:after { background-size: 10px; }
-        &.tasto-3:after { background-size: 10px; }
-        &.tasto-4:after { background-size: 20px; }
-        &.tasto-5:after { background-size: 20px; }
+        &:after {
+            background-size: 20px;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            box-shadow: inset 0 0 8px 2px rgba(0,0,0,0.5);
+        }
     }
     #size-pattern {
         width: 100%;
@@ -221,71 +197,58 @@ body {
     #showcase {
         padding: 40px 0;
         background-color: #eee;
-        .pb-pattern {
-            margin: 8px 0;
-            background-color: #33cc99;
+    }
+    .pb-pattern {
+        margin: 8px 0;
+        background-color: deepskyblue;
+        &:after {
+            opacity: 0.5;
+        }
+        span {
+            text-align: center;
+            display: block;
+            padding: 35px 0;
+            font-size: 14px;
+            font-style: italic;
+            -webkit-transition: all 0.1s ease-in-out;
+            -moz-transition: all 0.1s ease-in-out;
+            -ms-transition: all 0.1s ease-in-out;
+            -o-transition: all 0.1s ease-in-out;
+            transition: all 0.1s ease-in-out;
+        }
+        &.uno { @include pb('o-lines-light', 15px, #cccccc, #444444, 0.5, 'none'); }
+        &.due { @include pb('o-lines-medium', 15px, #cccccc, #444444, 0.5, 'none'); }
+        &.tre { @include pb('o-lines-bold', 15px, #cccccc, #444444, 0.5, 'none'); }
+        &.quattro { @include pb('h-lines-light', 5px, #cccccc, #444444, 0.5, 'none'); }
+        &.cinque { @include pb('h-lines-medium', 5px, #cccccc, #444444, 0.5, 'none'); }
+        &.sei { @include pb('h-lines-bold', 5px, #cccccc, #444444, 0.5, 'none'); }
+        &.sette { @include pb('cross-light', 15px, #cccccc, #444444, 0.5, 'none'); }
+        &.otto { @include pb('cross-medium', 15px, #cccccc, #444444, 0.5, 'none'); }
+        &.nove { @include pb('cross-bold', 15px, #cccccc, #444444, 0.5, 'none'); }
+        &.dieci { @include pb('cross-light-thin', 15px, #cccccc, #444444, 0.5, 'none'); }
+        &.undici { @include pb('cross-medium-thin', 15px, #cccccc, #444444, 0.5, 'none'); }
+        &.dodici { @include pb('cross-bold-thin', 15px, #cccccc, #444444, 0.5, 'none'); }
+        &.tredici { @include pb('buseca-1', 25px, #cccccc, #444444, 0.5, 'none'); }
+        &.quattordici { @include pb('candy-light', 50px, #cccccc, #444444, 0.5, 'none'); }
+        &.quindici { @include pb('candy-medium', 50px, #cccccc, #444444, 0.5, 'none'); }
+        &.sedici { @include pb('feather', 80px, #cccccc, #444444, 0.5, 'none'); }
+
+        &.tredici {
             &:after {
-                opacity: 0.5;
+                background-size: 30px;
             }
+        }
+        &.active {
             span {
-                text-align: center;
-                display: block;
-                padding: 35px 0;
-                font-size: 14px;
-                font-style: italic;
-                -webkit-transition: all 0.1s ease-in-out;
-                -moz-transition: all 0.1s ease-in-out;
-                -ms-transition: all 0.1s ease-in-out;
-                -o-transition: all 0.1s ease-in-out;
-                transition: all 0.1s ease-in-out;
-            }
-            &.buseca-1 {
-                background-color: #ff9659;
-                &:after {
-                    background-size: 30px;
-                }
-            }
-            &.o-lines-bold,
-            &.o-lines-medium,
-            &.o-lines-light {
-                background-color: #61d966;
-            }
-            &.h-lines-bold,
-            &.h-lines-medium,
-            &.h-lines-light {
-                background-color: #44d6da;
-            }
-            &.cross-bold,
-            &.cross-medium,
-            &.cross-light {
-                background-color: #0083d5;
-            }
-            &.cross-bold-thin,
-            &.cross-medium-thin,
-            &.cross-light-thin {
-                background-color: #e47b72;
-            }
-            &.candy-light,
-            &.candy-medium,
-            &.candy-bold {
-                background-color: magenta;
-                &:after {
-                    background-size: 100px;
-                }
-            }
-            &.active {
-                span {
-                    padding: 65px 0;
-                    font-size: 18px;
-                    font-weight: bold;
-                }
+                padding: 65px 0;
+                font-size: 18px;
+                font-weight: bold;
             }
         }
     }
 }
 
 .intro {
-    background-color: yellow;
     padding: 40px 0;
     border-bottom: 4px solid #343434;
     &:after {
