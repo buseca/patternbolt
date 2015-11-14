@@ -5,6 +5,10 @@ Patternbolt is a fine selection of SVG pattern background, packed in a single or
 The pattern is added in a "after" element and your original element still be inalterate and ready for manipulations. As they are vectors they never pixelate, not even on 4k screens. 
 The pattern selection still be under development, to see the showcase, visit the <a href="http://buseca.github.io/patternbolt/">demo page</a>
 
+##Contributions
+Contributions and pull requests are always welcome.
+If you are a Designer you can vote and submit new patterns joining the public <a href="https://trello.com/b/qlC1dtZa/patternbolt-new-patterns-proposals" target="_blank">Trello Board</a>. Contact me by twitter or email to request to be added as member to the board.
+
 ##SCSS version
 The Scss version is the main one, it's the more advanced one and its pattern library is always up-to-date.<br>
 To use it you can follow the instruction commented directly in the Scss file.<br>
@@ -28,7 +32,7 @@ Basically you can call the whole Patternbolt Scss file in your project with an @
 **example**
 
     .item {
-       @include pb('buseca-1');
+       @include pb('buseca-a');
     }
 
 **the css output**
@@ -60,7 +64,7 @@ Basically you can call the whole Patternbolt Scss file in your project with an @
 **example**
 
     .item {
-      @include pb('buseca-1', 25px, #f00, #0f0, 0.5, 'mask');
+      @include pb('buseca-a', 25px, #f00, #0f0, 0.5, 'mask');
     }
     
 **the css output**
@@ -96,24 +100,26 @@ Just include it in your project whith this:
 and add the right pattern class to your elements in the DOM. You can also change pattern color and the pattern size changing the background css property, check the <a href="http://buseca.github.io/patternbolt/">demo page</a> to see how to do it.<br>
 Here come the list of CSS pattern classes in the library:
 
-    .buseca-1
-    .h-lines-bold
-    .h-lines-medium
-    .h-lines-light
-    .o-lines-bold
-    .o-lines-medium
-    .o-lines-light
-    .cross-bold
-    .cross-medium
-    .cross-light
-    .cross-bold-thin
-    .cross-medium-thin
-    .cross-light-thin
+    .buseca-a
+    .feather
+    .lines-a
+    .lines-b
+    .lines-c
+    .lines-45-a
+    .lines-45-b
+    .lines-45-c
+    .cross-a
+    .cross-b
+    .cross-c
+    .cross-thin-a
+    .cross-thin-b
+    .cross-thin-c
+    .candy-a
+    .candy-b
 
 
 
 ##More info
 
 You can check the demo pagea at http://buseca.github.io/patternbolt/<br>
-Contributions are welcome!<br>
 You can find me on twitter: **<a href="https://twitter.com/ruggeromotta">@ruggeromotta</a>**
