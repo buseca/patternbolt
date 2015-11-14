@@ -1,8 +1,7 @@
 body {
   font-family: helvetica, sans-serif;
   background: #ccc;
-  overflow-x: hidden;
-  width: 100vw; }
+  overflow-x: hidden; }
 
 header {
   height: 100px;
@@ -34,8 +33,12 @@ header {
   right: -400px;
   z-index: 200;
   transition: right 0.5s; }
+  @media only screen and (max-width: 64em) {
+    .controllers {
+      display: none; } }
   .controllers.showit {
-    right: 20px; }
+    right: 20px;
+    display: block; }
   .controllers div {
     padding: 10px;
     margin-left: 10px;
