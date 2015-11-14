@@ -1,10 +1,16 @@
 @charset 'UTF-8';
 @import '../PatternBolt/scss/patternbolt.scss';
 
+body {
+    font-family: helvetica, sans-serif;
+    background: #ccc;
+}
+
 header {
     height: 100px;
     background: crimson;
-    animation: changeheader 10s infinite;
+    background: #333;
+    // animation: changeheader 10s infinite;
     border-bottom: 10px solid white;
     h1 {
         color: white;
@@ -17,7 +23,7 @@ header {
 }
 
 .selecta {
-    height: calc( 100vh - 100px );
+    min-height: calc( 100vh - 100px );
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -72,11 +78,12 @@ header {
 
 // style generali degli item
 .item {
+    cursor: pointer;
     height: 280px;
     width: 280px;
-    margin: 0 5px 10px 5px;
+    margin: 15px 15px 15px 15px;
     transition: width .3s, height .3s;
-    &.expand {
+    &.expanded {
         position: fixed;
         width: 100%;
         height: calc( 100vh - 100px );
@@ -92,30 +99,57 @@ header {
         transition: background-color .5s, background-size .2s linear;
     }
 
+
     &:nth-child(1) {
-        @include pb('buseca-1', 50px, crimson, #fff, 1, 'none');
+        @include pb('lines-45-a', 10px, #333, #ccc, 1, 'none');
     }
     &:nth-child(2) {
-        @include pb('o-lines-bold', 50px, crimson, #fff, 1, 'none');
+        @include pb('lines-45-b', 10px, #333, #ccc, 1, 'none');
     }
     &:nth-child(3) {
-        @include pb('h-lines-bold', 5px, crimson, #fff, 1, 'none');
+        @include pb('lines-45-c', 10px, #333, #ccc, 1, 'none');
     }
     &:nth-child(4) {
-        @include pb('feather', 80px, crimson, #fff, 1, 'none');
+        @include pb('lines-a', 10px, #333, #ccc, 1, 'none');
     }
     &:nth-child(5) {
-        @include pb('o-lines-bold', 50px, crimson, #fff, 1, 'none');
+        @include pb('lines-b', 10px, #333, #ccc, 1, 'none');
     }
     &:nth-child(6) {
-        @include pb('o-lines-medium', 5px, crimson, #fff, 1, 'none');
+        @include pb('lines-c', 10px, #333, #ccc, 1, 'none');
     }
     &:nth-child(7) {
-        @include pb('o-lines-bold', 50px, crimson, #fff, 1, 'none');
+        @include pb('china-a', 50px, #333, #ccc, 1, 'none');
     }
     &:nth-child(8) {
-        @include pb('h-lines-medium', 5px, crimson, #fff, 1, 'none');
+        @include pb('feather', 50px, #333, #ccc, 1, 'none');
     }
+
+    &:nth-child(9) {
+        @include pb('candy-a', 80px, #333, #ccc, 1, 'none');
+    }
+    &:nth-child(10) {
+        @include pb('candy-b', 80px, #333, #ccc, 1, 'none');
+    }
+    &:nth-child(11) {
+        @include pb('cross-a', 10px, #333, #ccc, 1, 'none');
+    }
+    &:nth-child(12) {
+        @include pb('cross-b', 10px, #333, #ccc, 1, 'none');
+    }
+    &:nth-child(13) {
+        @include pb('cross-c', 10px, #333, #ccc, 1, 'none');
+    }
+    &:nth-child(14) {
+        @include pb('cross-thin-a', 10px, #333, #ccc, 1, 'none');
+    }
+    &:nth-child(15) {
+        @include pb('cross-thin-b', 10px, #333, #ccc, 1, 'none');
+    }
+    &:nth-child(16) {
+        @include pb('cross-thin-c', 10px, #333, #ccc, 1, 'none');
+    }
+
 }
     
 // style degli hover per gli item quando in modalità showcase
@@ -123,61 +157,194 @@ header {
     .item {
         &:nth-child(1) {
             &:hover {
-                @include pb('buseca-1', 100px, #333, #ccc, 1, 'none');
+                @include pb('lines-45-a', 80px, white, crimson, 1, 'none');
             }
         }
         &:nth-child(2) {
             &:hover {
-                @include pb('o-lines-bold', 100px, #333, #ccc, 1, 'none');
+                @include pb('lines-45-b', 80px, white, crimson, 1, 'none');
             }
         }
         &:nth-child(3) {
             &:hover {
-                @include pb('h-lines-bold', 10px, #333, #ccc, 1, 'none');
+                @include pb('lines-45-c', 80px, white, crimson, 1, 'none');
             }
         }
         &:nth-child(4) {
             &:hover {
-                @include pb('feather', 110px, #333, #ccc, 1, 'none');
+                @include pb('lines-a', 30px, white, crimson, 1, 'none');
             }
         }
         &:nth-child(5) {
             &:hover {
-                @include pb('o-lines-bold', 100px, #333, #ccc, 1, 'none');
+                @include pb('lines-b', 30px, white, crimson, 1, 'none');
             }
         }
         &:nth-child(6) {
             &:hover {
-                @include pb('o-lines-medium', 10px, #333, #ccc, 1, 'none');
+                @include pb('lines-c', 30px, white, crimson, 1, 'none');
             }
         }
         &:nth-child(7) {
             &:hover {
-                @include pb('o-lines-bold', 100px, #333, #ccc, 1, 'none');
+                @include pb('china-a', 120px, white, crimson, 1, 'none');
             }
         }
         &:nth-child(8) {
             &:hover {
-                @include pb('h-lines-medium', 10px, #333, #ccc, 1, 'none');
+                @include pb('feather', 80px, white, crimson, 1, 'none');
+            }
+        }
+
+        &:nth-child(9) {
+            &:hover {
+                @include pb('candy-a', 150px, white, crimson, 1, 'none');
+            }
+        }
+        &:nth-child(10) {
+            &:hover {
+                @include pb('candy-b', 150px, white, crimson, 1, 'none');
+            }
+        }
+        &:nth-child(11) {
+            &:hover {
+                @include pb('cross-a', 40px, white, crimson, 1, 'none');
+            }
+        }
+        &:nth-child(12) {
+            &:hover {
+                @include pb('cross-b', 40px, white, crimson, 1, 'none');
+            }
+        }
+        &:nth-child(13) {
+            &:hover {
+                @include pb('cross-c', 40px, white, crimson, 1, 'none');
+            }
+        }
+        &:nth-child(14) {
+            &:hover {
+                @include pb('cross-thin-a', 40px, white, crimson, 1, 'none');
+            }
+        }
+        &:nth-child(15) {
+            &:hover {
+                @include pb('cross-thin-b', 40px, white, crimson, 1, 'none');
+            }
+        }
+        &:nth-child(16) {
+            &:hover {
+                @include pb('cross-thin-c', 40px, white, crimson, 1, 'none');
+            }
+        }
+
+        &:nth-child(17) {
+            &:hover {
+                @include pb('feather', 80px, white, crimson, 1, 'none');
+            }
+        }
+        &:nth-child(18) {
+            &:hover {
+                @include pb('feather', 80px, white, crimson, 1, 'none');
+            }
+        }
+        &:nth-child(19) {
+            &:hover {
+                @include pb('feather', 80px, white, crimson, 1, 'none');
+            }
+        }
+        &:nth-child(20) {
+            &:hover {
+                @include pb('feather', 80px, white, crimson, 1, 'none');
             }
         }
     }
 }
 
-
-
 // style dell'item expanded
 .selecta {
-    .expand {
+    .expanded {
         &.xsmall::after { background-size: 5px; }
         &.small::after { background-size: 15px; }
         &.medium::after { background-size: 30px; }
         &.large::after { background-size: 50px; }
         &.xlarge::after { background-size: 80px; }
         &.xxlarge::after { background-size: 120px; }
+        &.xxxlarge::after { background-size: 170px; }
     }
 }
 
+
+.content {
+    background-color: white;
+    &.hidden {
+        display: none;
+    }
+    .row {
+        margin-bottom: 40px;
+    }
+    a {
+        color: #339966;
+        text-decoration: none;
+        font-weight: bold;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.links {
+    padding: 100px 0;
+    background: #333;
+    border-top: 10px solid white;
+   a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+    line-height: 80px;
+    height: 80px;
+    overflow: hidden;
+    font-weight: 200;
+    display: block;
+    text-align: center;
+    &:after {
+        transition: background-color .25s linear, background-size .25s linear;
+    }
+    &.download {
+        @include pb('lines-45-c', 40px, #006699, #006699, 1, 'none');
+        &:hover {
+            @include pb('lines-45-c', 80px, #336666, #339966, 1, 'none');
+        }
+    }
+    &.github {
+        @include pb('lines-45-c', 20px, #4183c4, #4183c4, 1, 'none');
+        &:hover {
+            @include pb('lines-45-c', 40px, #336666, #339966, 1, 'none');
+        }
+    }
+    &.twitter {
+        @include pb('lines-45-c', 8px, #55acee, #55acee, 1, 'none');
+        &:hover {
+            @include pb('lines-45-c', 16px, #336666, #339966, 1, 'none');
+        }
+    }
+    span {
+        margin-right: 20px;
+        font-size: 36px;
+        vertical-align: middle;
+    }
+   } 
+}
+
+.call {
+    padding: 100px 0;
+    font-size: 21px;
+    line-height: 28px;
+}
+
+.box-img {
+    @include pb('lines-45-a', 15px, white, red, 0.7, 'mask');
+}
 
 
 
@@ -195,10 +362,10 @@ header {
         background-color: brown;
     }
     40% {
-        background-color: tomato;
+        background-color: steelblue;
     }
     50% {
-        background-color: coral;
+        background-color: purple;
     }
     60% {
         background-color: darkgreen;
@@ -210,28 +377,22 @@ header {
         background-color: green;
     }
     90% {
-        background-color: grey;
+        background-color: darkslateblue;
     }
     to {
         background-color: black;
     }
 }
 
-@keyframes changeheader {
-    from {
-        background-color: crimson;
-    }
-    50% {
-        background-color: tomato;
-    }
-    to {
-        background-color: crimson;
-    }
+
+code {
+    border: 2px solid #339966;
+    padding: 5px;
+    color: #339966;
+    border-radius: 6px;
+    margin: 5px;
+    display: inline-block;
 }
-
-
-
-
 
 
 
