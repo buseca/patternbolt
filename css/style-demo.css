@@ -1,6 +1,7 @@
 body {
   font-family: helvetica, sans-serif;
-  background: #ccc; }
+  background: #ccc;
+  overflow-x: hidden; }
 
 header {
   height: 100px;

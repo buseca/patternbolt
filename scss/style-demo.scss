@@ -4,6 +4,7 @@
 body {
     font-family: helvetica, sans-serif;
     background: #ccc;
+    overflow-x: hidden;
 }
 
 header {
@@ -29,7 +30,6 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    // align-content: shrink;
     .item.reduce {
         width:0;
         height: 0;
