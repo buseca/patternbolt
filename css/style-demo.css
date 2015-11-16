@@ -73,7 +73,7 @@ header {
     height: calc( 100vh - 100px );
     margin: 0px; }
     .item.expanded:after {
-      animation: changecolor 20s infinite; }
+      animation: changecolor 40s infinite; }
   .item.reduce {
     margin: 0px; }
   .item:after {
